@@ -21,29 +21,54 @@ Sept. 2023 ‑ Current
   - Advisor: Yuhao Zhu [https://yuhaozhu.com/](https://yuhaozhu.com/)
   - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
   
-- Peking University, M.Sc. in Intelligence Science and Technology (Sept. 2020 ‑ June 2023)
-- Tsinghua University, B.E. in Electronic Engineering (Aug. 2016 ‑ June 2020)
+- Peking University, M.Sc. in Intelligence Science and Technology \\
+  Sept. 2020 ‑ June 2023
+  - Advisor: Dingsheng Luo [http://scholar.pku.edu.cn/dsluo](http://scholar.pku.edu.cn/dsluo)
+  - GPA: 3.73 / 4.0, equivalent to 90+ / 100
+  - Research Interests: AI + Robotics, Autonomous Driving System, SLAM
+  - Thesis: Sensorimotor coordinated unmanned vehicle autonomous exploration and mapping in unknown environment
+- Tsinghua University, B.E. in Electronic Engineering \\
+  Aug. 2016 ‑ June 2020
+  - Advisor: Li Su [http://web.ee.tsinghua.edu.cn/suli/en/index.htm](http://web.ee.tsinghua.edu.cn/suli/en/index.htm)
+  - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
+  - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.
 
-Research Interests
+
+Work Experiences
 ======
-1. Robot Learning. (control, planning)
-2. Atonomous Driving System. (especially multi-modal, multi-sensor fushion perception)
-3. ASIC / FPGA acceleration for everything. (HW/SW co-design)
+1. Advanced Micro Devices, Inc. (AMD), Co‑Op / Intern
+   - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system
+   - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models.
+2. Cambricon Technologies Co., Ltd. 
+   - Neural Networks pruning for super‑resolution networks
 
 <!-- Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
 Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html). -->
 
-Publication
+Publications
 ======
-To be added.
+[1] Wenfei Hu, Weikai Lin, Hongyu Fang, Yi Wang, Dingsheng Luo,
+"Learning Clear Class Separation for Open-Set 3D Detector in Autonomous Vehicle Via Selective Forgetting" 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)
+
+[2] 刘天林 ∗，曲威名 ∗，林惟凯，罗定生. 机器人学习方法综述 [J]. 北京大学学报自
+然科学版, 2023, 59 
+
+[3] Shuai Fang, Yaoyao Wei, Weikai Lin, Jianan Zhang, Tianlin Liu and Dingsheng Luo,
+”Approaching Sound Object with Sensorimotor Coordination when Sensors Partially
+Damaged,” 2021 IEEE International Conference on Development and Learning (ICDL),
+Beijing, China, 2021, pp. 1-7, doi: 10.1109/ICDL49984.2021.9515634.
+
+[4] Yaoyao Wei, Shuai Fang, Weikai Lin, Jianan Zhang and Dingsheng Luo, ”Acquiring
+Robot Navigation Skill with Knowledge Learned from Demonstration,” 2021 IEEE International Conference on Development and Learning (ICDL), Beijing, China, 2021,
+pp. 1-6, doi: 10.1109/ICDL4998 4.2021.9515639.
 
 <!-- 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
 1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+2. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+3. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+4. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+5. Check status by going to the repository settings, in the "GitHub pages" section
 
 Site-wide configuration
 ------
