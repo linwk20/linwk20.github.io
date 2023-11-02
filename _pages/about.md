@@ -16,7 +16,7 @@ power of technologies.
 
 Educations
 ======
-- University of Rochester, Ph.D. in Computer Science
+- University of Rochester, Ph.D. in Computer Science \\
 Sept. 2023 ‑ Current
   - Advisor: Yuhao Zhu [https://yuhaozhu.com/](https://yuhaozhu.com/)
   - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
