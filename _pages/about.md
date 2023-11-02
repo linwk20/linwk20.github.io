@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-  A Ph.D. candidate at the University of Rochester who is interested in VR, Sensor Design, Computer Architecture, Robotics, and Communication
+&nbsp;&nbsp; A Ph.D. candidate at the University of Rochester who is interested in VR, Sensor Design, Computer Architecture, Robotics, and Communication
 systems. My goal is to bridge the gap between hardware and software from the perspective of system‑level design and optimization. For example,
 many researchers in VR or Robotics are not familiar with hardware such as Sensors, Computation Units, or Communication Systems, and this gap
 will prevent the optimal design of the final system. To resolve this, we can perform system‑level hardware‑software co‑design to unleash the full
