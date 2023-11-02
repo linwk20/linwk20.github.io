@@ -31,7 +31,7 @@ Educations
   <span style="color: gray">*Aug. 2016 ‑ June 2020*</span>
   - Advisor: Li Su [http://web.ee.tsinghua.edu.cn/suli/en/index.htm](http://web.ee.tsinghua.edu.cn/suli/en/index.htm)
   - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
-  - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.
+  - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication. 
 
 
 Work Experiences
