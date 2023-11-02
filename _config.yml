@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "WeikaiLin / Master Student"
+title                    : "WeikaiLin"
 title_separator          : "-"
 name                     : &name "Weikai Lin"
 description              : &description "personal description"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Weikai Lin"
   avatar           : "lwk.jpg"
-  bio              : "Master Student at Peking University"
-  location         : "Beijing, China"
+  bio              : "PhD Student at University of Rochester"
+  location         : "NY, US"
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
 #   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :  linwk20@stu.pku.edu.cn
+  email            :  wlin33@ur.rochester.edu
 #   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
 #   uri              :
 #   bitbucket        :
