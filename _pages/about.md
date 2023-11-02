@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-A Ph.D. candidate at the University of Rochester who is interested in VR, Sensor Design, Computer Architecture, Robotics, and Communication
+  A Ph.D. candidate at the University of Rochester who is interested in VR, Sensor Design, Computer Architecture, Robotics, and Communication
 systems. My goal is to bridge the gap between hardware and software from the perspective of system‑level design and optimization. For example,
 many researchers in VR or Robotics are not familiar with hardware such as Sensors, Computation Units, or Communication Systems, and this gap
 will prevent the optimal design of the final system. To resolve this, we can perform system‑level hardware‑software co‑design to unleash the full
@@ -16,8 +16,11 @@ power of technologies.
 
 Educations
 ======
-- University of Rochester, Ph.D. in Computer Science (Sept. 2023 ‑ Current)
-  - 
+- University of Rochester, Ph.D. in Computer Science
+Sept. 2023 ‑ Current
+  - Advisor: Yuhao Zhu [https://yuhaozhu.com/](https://yuhaozhu.com/)
+  - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
+  
 - Peking University, M.Sc. in Intelligence Science and Technology (Sept. 2020 ‑ June 2023)
 - Tsinghua University, B.E. in Electronic Engineering (Aug. 2016 ‑ June 2020)
 
