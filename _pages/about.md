@@ -19,7 +19,7 @@ Educations
 - University of Rochester \\
 <span style="color: gray">*Ph.D. in Computer Science*</span> \\
 <span style="color: gray">*Sept. 2023 ‑ Current*</span>
-  - Advisor: Yuhao Zhu [https://yuhaozhu.com/](https://yuhaozhu.com/)
+  - Advisor: Yuhao Zhu
   <!-- - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
    -->
 - Peking University  \\
@@ -27,12 +27,15 @@ Educations
   <span style="color: gray">*Sept. 2020 ‑ June 2023*</span>
   - Advisor: Dingsheng Luo
   - GPA: 3.73 / 4.0, equivalent to 90+ / 100
+
   <!-- - Research Interests: AI + Robotics, Autonomous Driving System, SLAM
-  - Thesis: Sensorimotor coordinated unmanned vehicle autonomous exploration and mapping in unknown environment
-- Tsinghua University  \\ -->
+  - Thesis: Sensorimotor coordinated unmanned vehicle autonomous exploration and mapping in unknown environment-->
+
+- Tsinghua University  \\
   <span style="color: gray">*B.E. in Electronic Engineering*</span> \\
   <span style="color: gray">*Aug. 2016 ‑ June 2020*</span>
   - Advisor: Li Su
+
   <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
   - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.  -->
 
@@ -40,9 +43,12 @@ Educations
 Work Experiences
 ======
 1. Advanced Micro Devices, Inc. (AMD), Co‑Op / Intern
+
    <!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system
    - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
+
 2. Cambricon Technologies Co., Ltd., Intern
+
    <!-- - Neural Networks pruning for super‑resolution networks -->
 
 <!-- Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
@@ -51,7 +57,7 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 
 Publications
 ======
-- Lin, Weikai, Yu Feng, and Yuhao Zhu. "RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering." arXiv preprint arXiv:2407.00435 (2024).
+- **Lin, Weikai**, Yu Feng, and Yuhao Zhu. "RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering." arXiv preprint arXiv:2407.00435 (2024).
 
 - Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. (2024). OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving. Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)
 
