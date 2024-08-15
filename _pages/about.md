@@ -57,7 +57,7 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 
 Publications
 ======
-- Yu Feng, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. "Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture." ACM Trans. Archit. Code Optim. (TACO) Just Accepted (2024).
+- Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. "Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture." ACM Trans. Archit. Code Optim. (TACO) Just Accepted (2024).
 
 - **Lin, Weikai**, Yu Feng, and Yuhao Zhu. "RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering." arXiv preprint arXiv:2407.00435 (2024).
 
