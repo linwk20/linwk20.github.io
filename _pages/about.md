@@ -79,12 +79,9 @@ Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). Beijing Da Xue Xue Bao, 59(6), 1
 - **“Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged”**  
 Shuai Fang, Yaoyao Wei, **Weikai Lin**, Jianan Zhang, Tianlin Liu and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL), Beijing, China, 2021, pp. 1-7, doi: 10.1109/ICDL49984.2021.9515634.
 
----
-
-**“Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration”**  
+- **“Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration”**  
 Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL), Beijing, China, 2021, pp. 1-6, doi: 10.1109/ICDL4998 4.2021.9515639.
 
----
 
 
 <!-- 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
