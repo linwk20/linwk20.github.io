@@ -16,24 +16,24 @@ power of technologies.
 
 Educations
 ======
-- University of Rochester \\
-<span style="color: gray">*Ph.D. in Computer Science*</span> \\
-<span style="color: gray">*Sept. 2023 ‑ Current*</span>
+- University of Rochester, 
+<span style="color: gray">*Ph.D. in Computer Science*</span>, 
+<span style="color: gray">*2023 ‑ Current*</span>
   - Advisor: Yuhao Zhu
   <!-- - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
    -->
-- Peking University  \\
-  <span style="color: gray">*M.Sc. in Intelligence Science and Technology*</span> \\
-  <span style="color: gray">*Sept. 2020 ‑ June 2023*</span>
+- Peking University, 
+  <span style="color: gray">*M.Sc. in Intelligence Science and Technology*</span>, 
+  <span style="color: gray">*2020 ‑ 2023*</span>
   - Advisor: Dingsheng Luo
   - GPA: 3.73 / 4.0, equivalent to 90+ / 100
 
   <!-- - Research Interests: AI + Robotics, Autonomous Driving System, SLAM
   - Thesis: Sensorimotor coordinated unmanned vehicle autonomous exploration and mapping in unknown environment-->
 
-- Tsinghua University  \\
-  <span style="color: gray">*B.E. in Electronic Engineering*</span> \\
-  <span style="color: gray">*Aug. 2016 ‑ June 2020*</span>
+- Tsinghua University, 
+<span style="color: gray">*B.E. in Electronic Engineering*</span>, 
+  <span style="color: gray">*2016 - 2020*</span>
   - Advisor: Li Su
 
   <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
