@@ -57,6 +57,8 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 
 Publications
 ======
+- Yu Feng, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. "Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture." ACM Trans. Archit. Code Optim. (TACO) Just Accepted (2024).
+
 - **Lin, Weikai**, Yu Feng, and Yuhao Zhu. "RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering." arXiv preprint arXiv:2407.00435 (2024).
 
 - Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. (2024). OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving. Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)
