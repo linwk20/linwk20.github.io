@@ -61,16 +61,16 @@ Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaof
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024).
 
 - **“Learning Clear Class Separation for Open-Set 3D Detector in Autonomous Vehicle Via Selective Forgetting”**  
-Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN).
+Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2023).
 
 - **“A review of robot learning”**  
 Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). Beijing Da Xue Xue Bao, 59(6), 1069-1086. doi: [https://doi.org/10.13209/j.0479-8023.2023.086](https://doi.org/10.13209/j.0479-8023.2023.086).
 
 - **“Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged”**  
-Shuai Fang, Yaoyao Wei, **Weikai Lin**, Jianan Zhang, Tianlin Liu and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL), Beijing, China, 2021, pp. 1-7, doi: 10.1109/ICDL49984.2021.9515634.
+Shuai Fang, Yaoyao Wei, **Weikai Lin**, Jianan Zhang, Tianlin Liu and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL 2021), Beijing, China, 2021, pp. 1-7, doi: 10.1109/ICDL49984.2021.9515634.
 
 - **“Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration”**  
-Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL), Beijing, China, 2021, pp. 1-6, doi: 10.1109/ICDL4998 4.2021.9515639.
+Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. 2021 IEEE International Conference on Development and Learning (ICDL 2021), Beijing, China, 2021, pp. 1-6, doi: 10.1109/ICDL4998 4.2021.9515639.
 
 
 
