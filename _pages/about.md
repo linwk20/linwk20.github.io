@@ -56,7 +56,7 @@ Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaof
 
 
 - **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  
-**Lin, Weikai**, Yu Feng, and Yuhao Zhu. arXiv preprint arXiv:2407.00435 (2024). [[paper]](https://arxiv.org/pdf/2407.00435), [[code]](https://github.com/horizon-research/Fov-3DGS/tree/main/fov3dgs)
+**Lin, Weikai**, Yu Feng, and Yuhao Zhu. arXiv preprint arXiv:2407.00435 (2024). [[paper]](https://arxiv.org/pdf/2407.00435), [[code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
 
 - **“OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving”**  
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024).
