@@ -63,7 +63,7 @@ Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. Accepted 
 - **“Learning Clear Class Separation for Open-Set 3D Detector in Autonomous Vehicle Via Selective Forgetting”**  
 Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2023).
 
-- **“A review of robot learning”**  
+- **“A Review of Robot Learning”**  
 Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). Beijing Da Xue Xue Bao, 59(6), 1069-1086. doi: [https://doi.org/10.13209/j.0479-8023.2023.086](https://doi.org/10.13209/j.0479-8023.2023.086).
 
 - **“Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged”**  
