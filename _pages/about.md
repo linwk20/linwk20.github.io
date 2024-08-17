@@ -16,25 +16,33 @@ power of technologies.
 
 Educations
 ======
-- University of Rochester, 
-<span style="color: gray">*Ph.D. in Computer Science*</span>, 
-<span style="color: gray">*2023 ‑ Current*</span>
-  - Advisor: Yuhao Zhu
-  <!-- - Research Interests: VR and HCI system, Computational Sensor, Computer Architecture
-   -->
-- Peking University, 
-  <span style="color: gray">*M.Sc. in Intelligence Science and Technology*</span>, 
-  <span style="color: gray">*2020 ‑ 2023*</span>
-  - Advisor: Dingsheng Luo
-  - GPA: 3.73 / 4.0, equivalent to 90+ / 100
+<span style="font-size: smaller;">
 
-  <!-- - Research Interests: AI + Robotics, Autonomous Driving System, SLAM
-  - Thesis: Sensorimotor coordinated unmanned vehicle autonomous exploration and mapping in unknown environment-->
+  - University of Rochester, 
+  <span style="font-size: smaller;">*Ph.D. in Computer Science*</span>, 
+  <span style="font-size: smaller;">*2023 ‑ Current*</span>
 
-- Tsinghua University, 
-<span style="color: gray">*B.E. in Electronic Engineering*</span>, 
-  <span style="color: gray">*2016 - 2020*</span>
-  - Advisor: Li Su
+    - Advisor: Yuhao Zhu
+</span>
+
+<span style="font-size: smaller;">
+
+  - Peking University, 
+  <span style="color: gray; font-size: smaller;">*M.Sc. in Intelligence Science and Technology*</span>, 
+  <span style="color: gray; font-size: smaller;">*2020 ‑ 2023*</span>
+
+    - Advisor: Dingsheng Luo
+    <!-- - GPA: 3.73 / 4.0, equivalent to 90+ / 100 -->
+</span>
+
+<span style="font-size: smaller;">
+
+  - Tsinghua University, 
+  <span style="color: gray; font-size: smaller;">*B.E. in Electronic Engineering*</span>, 
+  <span style="color: gray; font-size: smaller;">*2016 - 2020*</span>
+  
+    - Advisor: Li Su
+</span>
 
   <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
   - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.  -->
@@ -42,12 +50,16 @@ Educations
 
 Work Experiences
 ======
+<span style="font-size: smaller;">
+
 1. Advanced Micro Devices, Inc. (AMD), Co‑Op / Intern
 
    <!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system
    - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
 
 2. Cambricon Technologies Co., Ltd., Intern
+
+</span>
 
    <!-- - Neural Networks pruning for super‑resolution networks -->
 
