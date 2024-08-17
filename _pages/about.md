@@ -35,8 +35,7 @@ Work Experiences
 ======
 <span style="font-size: smaller;"> 1. **Advanced Micro Devices, Inc. (AMD)**, Co‑Op / Intern </span>
 
-   <!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system
-   - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
+<!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
 
 <span style="font-size: smaller;">  2. **Cambricon Technologies Co., Ltd.**, Intern </span>
 
