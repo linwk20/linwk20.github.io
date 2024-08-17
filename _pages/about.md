@@ -16,33 +16,16 @@ power of technologies.
 
 Educations
 ======
-<span style="font-size: smaller;">
 
-  - University of Rochester, 
-  <span style="font-size: smaller;">*Ph.D. in Computer Science*</span>, 
-  <span style="font-size: smaller;">*2023 ‑ Current*</span>
+- <span style="font-size: smaller;">**University of Rochester**, *Ph.D. in Computer Science*, *2023 ‑ Current*</span>  
+  <span style="font-size: smaller;">Advisor: Yuhao Zhu</span>
 
-    - Advisor: Yuhao Zhu
-</span>
+- <span style="font-size: smaller;">**Peking University**, *M.Sc. in Intelligence Science and Technology* (2020 ‑ 2023)</span>  
+  <span style="font-size: smaller;">Advisor: Dingsheng Luo</span>
 
-<span style="font-size: smaller;">
+- <span style="font-size: smaller;">**Tsinghua University**, *B.E. in Electronic Engineering* (2016 ‑ 2020)</span>  
+  <span style="font-size: smaller;">Advisor: Li Su</span>
 
-  - Peking University, 
-  <span style="color: gray; font-size: smaller;">*M.Sc. in Intelligence Science and Technology*</span>, 
-  <span style="color: gray; font-size: smaller;">*2020 ‑ 2023*</span>
-
-    - Advisor: Dingsheng Luo
-    <!-- - GPA: 3.73 / 4.0, equivalent to 90+ / 100 -->
-</span>
-
-<span style="font-size: smaller;">
-
-  - Tsinghua University, 
-  <span style="color: gray; font-size: smaller;">*B.E. in Electronic Engineering*</span>, 
-  <span style="color: gray; font-size: smaller;">*2016 - 2020*</span>
-  
-    - Advisor: Li Su
-</span>
 
   <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
   - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.  -->
@@ -52,12 +35,12 @@ Work Experiences
 ======
 <span style="font-size: smaller;">
 
-1. Advanced Micro Devices, Inc. (AMD), Co‑Op / Intern
+1. **Advanced Micro Devices, Inc. (AMD)**, Co‑Op / Intern
 
    <!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system
    - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
 
-2. Cambricon Technologies Co., Ltd., Intern
+2. **Cambricon Technologies Co., Ltd.**, Intern
 
 </span>
 
