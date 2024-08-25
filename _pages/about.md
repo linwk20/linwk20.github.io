@@ -9,7 +9,7 @@ redirect_from:
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;  I am a Ph.D. student at the University of Rochester with a focus on VR, Sensor Design, Computer Architecture, Robotics, and Communication systems. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
-Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <u><a href="./Weikai_Academic_CV.pdf">CV</a>.</u>
+Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <u><a href="files/Weikai_Academic_CV.pdf">CV</a>.</u>
 
 <!-- For example,
 many researchers in VR or Robotics are not familiar with hardware such as Sensors, Computation Units, or Communication Systems, and this gap
