@@ -7,16 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;  A Ph.D. student at the University of Rochester who is interested in VR, Sensor Design, Computer Architecture, Robotics, and Communication
-systems. My goal is to bridge the gap between hardware and software from the perspective of system‑level design and optimization. 
-
+&nbsp;&nbsp;&nbsp;&nbsp;  I am a Ph.D. student at the University of Rochester with a focus on VR, Sensor Design, Computer Architecture, Robotics, and Communication systems. My goal is to bridge the gap between hardware and software through system-level design and optimization.
+Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies.
 <!-- For example,
 many researchers in VR or Robotics are not familiar with hardware such as Sensors, Computation Units, or Communication Systems, and this gap
 will prevent the optimal design of the final system. To resolve this, we can perform system‑level hardware‑software co‑design to unleash the full
 power of technologies. -->
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-Educations
+<!-- Educations
 ======
 
 - <span style="font-size: smaller;">**University of Rochester**, *Ph.D. in Computer Science*, *2023 ‑ Current*</span>  
@@ -26,20 +25,20 @@ Educations
   <span style="font-size: smaller;">Advisor: Dingsheng Luo</span>
 
 - <span style="font-size: smaller;">**Tsinghua University**, *B.E. in Electronic Engineering* (2016 ‑ 2020)</span>  
-  <span style="font-size: smaller;">Advisor: Li Su</span>
+  <span style="font-size: smaller;">Advisor: Li Su</span> -->
 
 
   <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
   - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.  -->
 
-
+<!-- 
 Work Experiences
 ======
-- <span style="font-size: smaller;"> **Advanced Micro Devices, Inc. (AMD)**, Co‑Op / Intern </span>
+- <span style="font-size: smaller;"> **Advanced Micro Devices, Inc. (AMD)**, Co‑Op / Intern </span> -->
 
 <!-- - SLAM for Autonomous Driving System: Lidar SLAM, BEV SLAM, Multisensor SLAM for real autonomous driving system - AMD GPUs Testing and Evaluation: Testing and evaluating AMD’s GPUs and Software stack on multiple famous Neural Network models. -->
 
-- <span style="font-size: smaller;">  **Cambricon Technologies Co., Ltd.**, Intern </span>
+<!-- - <span style="font-size: smaller;">  **Cambricon Technologies Co., Ltd.**, Intern </span> -->
 
    <!-- - Neural Networks pruning for super‑resolution networks -->
 
@@ -52,9 +51,7 @@ Publications
 
 
 - **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  
-Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. ACM Trans. Archit. Code Optim. (TACO) Just Accepted (2024). [[paper]](https://arxiv.org/pdf/2408.06608v1)
-
-
+Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. ACM Trans. Archit. Code Optim. (TACO) Just Accepted (August 2024). [[paper]](https://doi.org/10.1145/3689340)
 
 - **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  
 **Lin, Weikai**, Yu Feng, and Yuhao Zhu. arXiv preprint arXiv:2407.00435 (2024). [[paper]](https://arxiv.org/pdf/2407.00435), [[code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
