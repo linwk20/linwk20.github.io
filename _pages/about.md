@@ -15,21 +15,7 @@ will prevent the optimal design of the final system. To resolve this, we can per
 power of technologies. -->
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-<!-- Educations
-======
 
-- <span style="font-size: smaller;">**University of Rochester**, *Ph.D. in Computer Science*, *2023 ‑ Current*</span>  
-  <span style="font-size: smaller;">Advisor: Yuhao Zhu</span>
-
-- <span style="font-size: smaller;">**Peking University**, *M.Sc. in Intelligence Science and Technology* (2020 ‑ 2023)</span>  
-  <span style="font-size: smaller;">Advisor: Dingsheng Luo</span>
-
-- <span style="font-size: smaller;">**Tsinghua University**, *B.E. in Electronic Engineering* (2016 ‑ 2020)</span>  
-  <span style="font-size: smaller;">Advisor: Li Su</span> -->
-
-
-  <!-- - Research Interests: Wireless Communication System, 5G encoder‑decoder design and implementation
-  - Thesis: High‑Speed Encoder and Decoder Design and Implementation for Terahertz Communication.  -->
 
 <!-- 
 Work Experiences
