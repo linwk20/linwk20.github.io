@@ -38,11 +38,11 @@ Publications
 ======
 
 
-- **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  
-Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. ACM Trans. Archit. Code Optim. (TACO) Just Accepted (August 2024). [[paper]](https://doi.org/10.1145/3689340)
+- **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  [[paper]](https://doi.org/10.1145/3689340)
+Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu. ACM Trans. Archit. Code Optim. (TACO) Just Accepted (August 2024). 
 
-- **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  
-**Lin, Weikai**, Yu Feng, and Yuhao Zhu. arXiv preprint arXiv:2407.00435 (2024). [[paper]](https://arxiv.org/pdf/2407.00435), [[code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
+- **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  [[paper]](https://arxiv.org/pdf/2407.00435), [[code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
+**Lin, Weikai**, Yu Feng, and Yuhao Zhu. arXiv preprint arXiv:2407.00435 (2024). 
 
 - **“OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving”**  
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024).
