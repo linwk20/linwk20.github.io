@@ -35,6 +35,7 @@ arXiv preprint arXiv:2407.00435 (2024).
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. <br>
 Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024).
 
+---
 
 2023
 ---
@@ -49,6 +50,8 @@ Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. <br>
 Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). <br>
 Beijing Da Xue Xue Bao, 59(6), 1069-1086. doi: [https://doi.org/10.13209/j.0479-8023.2023.086](https://doi.org/10.13209/j.0479-8023.2023.086).
 
+---
+
 2021
 ---
 **“Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged”**<br>
@@ -60,4 +63,6 @@ Shuai Fang, Yaoyao Wei, **Weikai Lin**, Jianan Zhang, Tianlin Liu and Dingsheng 
 **“Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration”**<br>
 Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. <br>
 2021 IEEE International Conference on Development and Learning (ICDL 2021), Beijing, China, 2021, pp. 1-6, doi: 10.1109/ICDL4998 4.2021.9515639.
+
+---
 
