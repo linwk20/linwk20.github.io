@@ -29,6 +29,8 @@ ACM Trans. Archit. Code Optim. (TACO) Just Accepted (August 2024).
 **Weikai Lin**, Yu Feng, and Yuhao Zhu. <br>
 arXiv preprint arXiv:2407.00435 (2024). 
 
+---
+
 **“OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving”**  <br>
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. <br>
 Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024).
@@ -40,6 +42,8 @@ Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems 
 **“Learning Clear Class Separation for Open-Set 3D Detector in Autonomous Vehicle Via Selective Forgetting”**  <br>
 Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. <br>
 2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2023).
+
+---
 
 **“A Review of Robot Learning”**  <br>
 Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). <br>
