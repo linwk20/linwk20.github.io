@@ -49,7 +49,7 @@ Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaof
 Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. <br>
 *<i> IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>*.
 
-<span style="color: blue;">[FPGA, VR]</span> <strong>“Developed an end-to-end, highly optimized CPU/GPU/FPGA pipeline for HVS-VR”</strong> [[Code]](https://github.com/horizon-research/hvs_vr_encoding) <br>
+<span style="color: blue;">[FPGA, VR]</span> <strong>“Exploiting Human Color Discrimination for Memoryand Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo”</strong> [[Code]](https://github.com/horizon-research/hvs_vr_encoding) <br>
 *<i>Open-Sourced Project</i>*.
 
 ---
