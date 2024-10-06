@@ -50,7 +50,7 @@ Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. <br>
 *<i> IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>*.
 
 <span style="color: blue;">[FPGA, VR]</span> <strong>“Exploiting Human Color Discrimination for Memoryand Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo”</strong> [[Code]](https://github.com/horizon-research/hvs_vr_encoding) <br>
-*<i>Open-Sourced Project</i>*, including highly optimized CPU/GPU/FPGA implementation.
+*<i>Open-Sourced Project</i>*, including highly optimized CPU/GPU/FPGA implementations.
 
 ---
 
