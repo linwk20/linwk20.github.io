@@ -15,6 +15,7 @@ redirect_from:
 <div class="scroll-box" style="height: 250px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background-color: #fafafa; color: #333;">
     <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper conditionally accepted by ASPLOS 2025.</p>
     <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by TACO.</p>
+    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by IROS 2024.</p>
     <p><strong><span style="color: blue;">[Conference]</span> September 2024:</strong> Honored to participate in the NSF FuSe annual review as a student participant in Oregon.</p>
     <p><strong><span style="color: blue;">[Conference]</span> April 2024:</strong> Excited to join ASPLOS 2024 in San Diego. It was a wonderful experience!</p>
     <p><strong><span style="color: blue;">[Conference]</span> January 2024:</strong> Proud to demo HVS-VR (<a href="https://github.com/horizon-research/hvs_vr_encoding" style="color: #1e90ff;">GitHub link</a>) at EI-2024 in San Jose.</p>
