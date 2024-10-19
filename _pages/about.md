@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;  I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
+&nbsp;&nbsp;&nbsp;&nbsp;  I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="files/Weikai_Academic_CV.pdf">CV</a>.
 
