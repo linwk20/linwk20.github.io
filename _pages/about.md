@@ -13,7 +13,7 @@ redirect_from:
 
 <h2>News</h2>
 <div class="scroll-box" style="height: 250px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background-color: #fafafa; color: #333;">
-    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper conditionally accepted by ASPLOS 2025.</p>
+    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted by ASPLOS 2025.</p>
     <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by TACO.</p>
     <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by IROS 2024.</p>
     <p><strong><span style="color: blue;">[Conference]</span> September 2024:</strong> Honored to participate in the NSF FuSe annual review as a student participant in Oregon.</p>
@@ -42,7 +42,8 @@ Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaof
 <span style="color: blue;">[VR, CG]</span>  **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  [[Paper]](https://arxiv.org/pdf/2407.00435), [[Code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
 <br>
 **Weikai Lin**, Yu Feng, and Yuhao Zhu. <br>
-*<i> arXiv preprint arXiv:2407.00435 (2024)</i>*. 
+*<i> arXiv preprint arXiv:2407.00435 (2024)</i>*. <br>
+*<i>(Preprint and Shortened Version of MetaSapiens)</i>*
 
 ---
 
