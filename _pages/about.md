@@ -12,6 +12,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="images/Weikai_Academic_CV.pdf">CV</a>.
 
+🤝 **Looking for collaborations to work on impactful projects!**
 
 ## 🔥 _News_
 <div class="scroll-box" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background-color: #fafafa; color: #333;">
