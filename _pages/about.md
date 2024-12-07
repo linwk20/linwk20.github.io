@@ -62,7 +62,7 @@ Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaof
 ---
 
 <span style="color: blue;">[Robotics]</span>  **“OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving”**  <br>
-Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, & Luo, Dingsheng. <br>
+Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, Luo, Dingsheng. <br>
 *<i> IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>*
 
 ---
