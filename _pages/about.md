@@ -18,7 +18,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
     <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted by WACV 2025.</p>
     <p><strong><span style="color: blue;">[Symposium]</span> October 2024:</strong> I had the pleasure of presenting a demo at the AR/VR Symposium. <a href="https://events.rochester.edu/event/2024-arvr-symposium">Event Details</a>.</p>
     <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted by ASPLOS 2025.</p>
-    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by TACO.</p>
+    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by TACO 2024.</p>
     <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by IROS 2024.</p>
     <p><strong><span style="color: blue;">[Conference]</span> September 2024:</strong> Honored to participate in the NSF FuSe annual review as a student participant in Oregon.</p>
     <p><strong><span style="color: blue;">[Conference]</span> April 2024:</strong> Excited to join ASPLOS 2024 in San Diego. It was a wonderful experience!</p>
@@ -48,7 +48,7 @@ Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
 
 <span style="color: blue;">[HW, VR, CG]</span>  **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  [[Paper]](https://doi.org/10.1145/3689340) <br>
 Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu.   <br>
-*<i>TACO (ACM Transactions on Architecture and Code Optimization) </i>*, Just Accepted (August 2024).
+*<i>TACO 2024 (ACM Transactions on Architecture and Code Optimization) </i>*
 
 ---
 
