@@ -47,18 +47,20 @@ Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
 2024
 ---
 
-<span style="color: blue;">[HW, VR, CG]</span>  **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  [[Paper]](https://doi.org/10.1145/3689340) <br>
+<span style="color: blue;">[HW, VR, CG]</span>  **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  <br>
 Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu.   <br>
-*<i>TACO 2024 (ACM Transactions on Architecture and Code Optimization) </i>*
+*<i>TACO 2024 (ACM Transactions on Architecture and Code Optimization) </i>* <br>
+[[Paper]](https://doi.org/10.1145/3689340) 
 
 ---
 
-<span style="color: blue;">[VR, CG]</span>  **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**  [[Paper]](https://arxiv.org/pdf/2407.00435), [[Code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
+<span style="color: blue;">[VR, CG]</span>  **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**
 <br>
 **Weikai Lin**, Yu Feng, and Yuhao Zhu. <br>
 *<i> arXiv preprint arXiv:2407.00435 (2024)</i>*
 <br>
-*<i>(Preprint and Shortened Version of MetaSapiens)</i>*
+*<i>(Preprint and Shortened Version of MetaSapiens)</i>* <br>
+[[Paper]](https://arxiv.org/pdf/2407.00435), [[Code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
 
 ---
 
@@ -68,8 +70,9 @@ Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, Luo, Dingsheng. <br>
 
 ---
 
-<span style="color: blue;">[FPGA, VR]</span> <strong>“Exploiting Human Color Discrimination for Memoryand Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo”</strong> [[Code]](https://github.com/horizon-research/hvs_vr_encoding) <br>
-*<i>Open-Sourced Project</i>*, including highly optimized CPU/GPU/FPGA implementations.
+<span style="color: blue;">[FPGA, VR]</span> <strong>“Exploiting Human Color Discrimination for Memoryand Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo”</strong> <br>
+*<i>Open-Sourced Project</i>*, including highly optimized CPU/GPU/FPGA implementations. <br>
+[[Code]](https://github.com/horizon-research/hvs_vr_encoding) 
 
 ---
 
@@ -83,7 +86,7 @@ Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. <br>
 ---
 
 <span style="color: blue;">[Robotics]</span> **“A Review of Robot Learning”**  <br>
-Qu, W., Liu, T., **Lin, W.**, & Luo, D. (2023). <br>
+Qu, W., Liu, T., **Lin, W.**, Luo, D. (2023). <br>
 *<i> Beijing Da Xue Xue Bao, 59(6), 1069-1086</i>*
 
 ---
