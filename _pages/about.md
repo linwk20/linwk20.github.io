@@ -36,7 +36,8 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 ---
 <span style="color: blue;">[HW, VR, CG]</span>  **“MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering”** <br>
 **Weikai Lin\***, Yu Feng\*, and Yuhao Zhu. <br>
-*<i>ASPLOS 2025 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2025) </i>*
+*<i>ASPLOS 2025 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2025) </i>* <br>
+[[Project]](https://horizon-lab.org/metasapiens/)
 
 <span style="color: blue;">[AI, CV]</span>  **“Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation”** <br>
 Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
