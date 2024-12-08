@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 ## 🎓 _About Me_
-I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
+I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, AR/VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="images/Weikai_Academic_CV.pdf">CV</a>.
 
@@ -126,8 +126,14 @@ Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. <br>
 
 ## 📖 _Educations_
 - **University of Rochester**: Ph.D. in Computer Science (2023-Present)  
+    - Advisor: [Yuhao Zhu](https://yuhaozhu.com/)
+    - Research Interests: Computer Graphics, AR/VR, Sensor Design, Computer Architecture.
 - **Peking University**: M.Sc. in Intelligence Science and Technology (AI) (2020-2023) 
+    - Advisor: Dingsheng Luo
+    - Research Interests: Robotics, Artificial Intelligence, Autonomous Driving.
 - **Tsinghua University**: B.E. in Electronic Engineering (2016-2020)  
+    - Advisor: Li Su
+    - Research Interests: Software-Hardware Co-design, Error Correction Code in Wireless Communication System.
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
@@ -135,5 +141,9 @@ Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. <br>
 
 # 💻 Internships
 - *2022.07 - 2023.02*, [AMD](https://www.amd.com/en.html), Beijing, China.
+    - SLAMs for Autonomous Driving System.
+    - AMD GPUs Testing and Evaluation.
 - *2022 - 2023*, Chinese Academy of Science, Beijing, China.
+  - HLS-based (High-Level-Synthesis) wireless communication system development.
 - *2019.07 - 2019.08*, [Cambricon](https://www.cambricon.com/), Beijing, China.
+  -  Neural Networks pruning.
