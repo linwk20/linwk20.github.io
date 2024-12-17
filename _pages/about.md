@@ -48,7 +48,7 @@ Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
 
 ---
 
-<span style="color: blue;">[Mobile, VR]</span> **“Advancing Immersive Content Delivery with Dynamic 3D Gaussian Splatting”** <br>
+<span style="color: blue;">[Mobile, VR, CG]</span> **“Advancing Immersive Content Delivery with Dynamic 3D Gaussian Splatting”** <br>
 Nan Wu\*, **Weikai Lin\***, Ruizhi Cheng\*, Bo Chen, Yuhao Zhu, Klara Nahrstedt, Bo Han. <br>
 <i>HotMobile 2025 (26th International Workshop on Mobile Computing Systems and Applications)</i>
 
