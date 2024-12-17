@@ -16,11 +16,12 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 
 ## 🔥 _News_
 <div class="scroll-box" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background-color: #fafafa; color: #333;">
-    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted by WACV 2025.</p>
+    <p><strong><span style="color: red;">[Paper]</span> December 2024:</strong> One paper accepted to HotMobile 2025.</p>
+    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted to WACV 2025.</p>
     <p><strong><span style="color: blue;">[Symposium]</span> October 2024:</strong> I had the pleasure of presenting a demo at the AR/VR Symposium. <a href="https://events.rochester.edu/event/2024-arvr-symposium">Event Details</a>.</p>
-    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted by ASPLOS 2025.</p>
-    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by TACO 2024.</p>
-    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted by IROS 2024.</p>
+    <p><strong><span style="color: red;">[Paper]</span> October 2024:</strong> One paper accepted to ASPLOS 2025.</p>
+    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted to TACO 2024.</p>
+    <p><strong><span style="color: red;">[Paper]</span> August 2024:</strong> One paper accepted to IROS 2024.</p>
     <p><strong><span style="color: blue;">[Conference]</span> September 2024:</strong> Honored to participate in the NSF FuSe annual review as a student participant in Oregon.</p>
     <p><strong><span style="color: blue;">[Conference]</span> April 2024:</strong> Excited to join ASPLOS 2024 in San Diego. It was a wonderful experience!</p>
     <p><strong><span style="color: blue;">[Conference]</span> January 2024:</strong> Proud to demo HVS-VR (<a href="https://github.com/horizon-research/hvs_vr_encoding" style="color: #1e90ff;">GitHub link</a>) at EI-2024 in San Jose.</p>
@@ -39,9 +40,17 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 *<i>ASPLOS 2025 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2025) </i>* <br>
 [[Project]](https://horizon-lab.org/metasapiens/)
 
+---
+
 <span style="color: blue;">[AI, CV]</span>  **“Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation”** <br>
 Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
 *<i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision 2025) </i>*
+
+---
+
+<span style="color: blue;">[Mobile, VR]</span> **“Advancing Immersive Content Delivery with Dynamic 3D Gaussian Splatting”** <br>
+Nan Wu\*, **Weikai Lin\***, Ruizhi Cheng\*, Bo Chen, Yuhao Zhu, Klara Nahrstedt, Bo Han. <br>
+<i>HotMobile 2025 (26th International Workshop on Mobile Computing Systems and Applications)</i>
 
 ---
 
