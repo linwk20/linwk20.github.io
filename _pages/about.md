@@ -190,7 +190,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <img src="images/pku.png" alt="Peking University Logo" style="width: 15%; height: auto; margin-right: 15px;">
     <div>
-        <p><b>Peking University</b>: M.Sc. in Intelligence Science and Technology (AI), 2020-2023</p>
+        <p><b>Peking University</b>: M.Sc. in Intelligence Science and Technology, 2020-2023</p>
         <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
             <li>Advisor: Dingsheng Luo</li>
             <li>GPA: 3.73/4.0 (90+/100)</li>
