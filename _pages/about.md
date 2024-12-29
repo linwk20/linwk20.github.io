@@ -47,8 +47,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
         <br>
         <b>Weikai Lin*</b>, Yu Feng*, and Yuhao Zhu
         <br>
-        <br>
-        <i>ASPLOS 2025 (ACM International Conference on Architectural Support for Programming Languages and
+        <i>ASPLOS 2025 (30th ACM International Conference on Architectural Support for Programming Languages and
 Operating Systems)</i>
         <br>
         [<a href="https://horizon-lab.org/metasapiens/">Project Page</a>], 
@@ -70,7 +69,7 @@ Operating Systems)</i>
         <br>
         Adith Boloor, <b>Weikai Lin</b>, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang
         <br>
-        <i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision)</i>
+        <i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision 2025)</i>
         <br>
         [<a href="">Paper(Coming Soon)</a>]
     </div>
