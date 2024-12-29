@@ -10,7 +10,7 @@ redirect_from:
 ## 🎓 _About Me_
 I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, AR/VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="images/Weikai_Academic_CV.pdf">CV</a>.
+&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="files/Weikai_Academic_CV.pdf">CV</a>.
 
 🤝 **Looking for collaborations to work on impactful projects!**
 
@@ -29,110 +29,123 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 </div>
 
 
-## 📝 _Publications_ {#publications}
+## 📝 _Publications_ (after 2024) {#publications}
 
 ( * : Equal contribution.)
 
-2025
----
-<span style="color: blue;">[HW, VR, CG]</span>  **“MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering”** <br>
-**Weikai Lin\***, Yu Feng\*, and Yuhao Zhu. <br>
-*<i>ASPLOS 2025 (ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2025) </i>* <br>
-[[Project]](https://horizon-lab.org/metasapiens/)
-
----
-
-<span style="color: blue;">[AI, CV]</span>  **“Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation”** <br>
-Adith Boloor, **Weikai Lin**, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang. <br>
-*<i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision 2025) </i>*
-
----
-
-<span style="color: blue;">[Mobile, VR, CG]</span> **“Advancing Immersive Content Delivery with Dynamic 3D Gaussian Splatting”** <br>
-Nan Wu\*, **Weikai Lin\***, Ruizhi Cheng\*, Bo Chen, Yuhao Zhu, Klara Nahrstedt, Bo Han. <br>
-<i>HotMobile 2025 (26th International Workshop on Mobile Computing Systems and Applications)</i>
-
----
-
-2024
----
-
-<span style="color: blue;">[HW, VR, CG]</span>  **“Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture”**  <br>
-Yu Feng\*, **Weikai Lin\***, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu.   <br>
-*<i>TACO 2024 (ACM Transactions on Architecture and Code Optimization) </i>* <br>
-[[Paper]](https://doi.org/10.1145/3689340) 
-
----
-
-<span style="color: blue;">[VR, CG]</span>  **“RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering”**
-<br>
-**Weikai Lin**, Yu Feng, and Yuhao Zhu. <br>
-*<i> arXiv preprint arXiv:2407.00435 (2024)</i>*
-<br>
-*<i>(Preprint and Shortened Version of MetaSapiens)</i>* <br>
-[[Paper]](https://arxiv.org/pdf/2407.00435), [[Code]](https://github.com/horizon-research/Fov-3DGS/tree/main)
-
----
-
-<span style="color: blue;">[Robotics]</span>  **“OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving”**  <br>
-Hu, Wenfei, **Lin, Weikai**, Fang, Hongyu, Wang, Yi, Luo, Dingsheng. <br>
-*<i> IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>*
-
----
-
-<span style="color: blue;">[FPGA, VR]</span> <strong>“Exploiting Human Color Discrimination for Memoryand Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo”</strong> <br>
-*<i>Open-Sourced Project</i>*, including highly optimized CPU/GPU/FPGA implementations. <br>
-[[Code]](https://github.com/horizon-research/hvs_vr_encoding) 
-
----
-
-2023
----
-
-<span style="color: blue;">[Robotics]</span>  **“Learning Clear Class Separation for Open-Set 3D Detector in Autonomous Vehicle Via Selective Forgetting”**  <br>
-Wenfei Hu, **Weikai Lin**, Hongyu Fang, Yi Wang, Dingsheng Luo. <br>
-*<i> RO-MAN 2023 (32nd IEEE International Conference on Robot and Human Interactive Communication)</i>*
-
----
-
-<span style="color: blue;">[Robotics]</span> **“A Review of Robot Learning”**  <br>
-Qu, W., Liu, T., **Lin, W.**, Luo, D. (2023). <br>
-*<i> Beijing Da Xue Xue Bao, 59(6), 1069-1086</i>*
-
----
-
-2021
----
-<span style="color: blue;">[Robotics]</span>  **“Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged”**<br>
-Shuai Fang, Yaoyao Wei, **Weikai Lin**, Jianan Zhang, Tianlin Liu and Dingsheng Luo. <br>
-*<i> ICDL 2021 ( 2021 IEEE International Conference on Development and Learning)</i>*
-
----
-
-<span style="color: blue;">[Robotics]</span> **“Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration”**<br>
-Yaoyao Wei, Shuai Fang, **Weikai Lin**, Jianan Zhang, and Dingsheng Luo. <br>
-*<i> ICDL 2021 ( 2021 IEEE International Conference on Development and Learning)</i>*
-
----
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">ASPLOS 2025</div>
+            <img src='files/asplos25_vr.png' alt="MetaSapiens Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href="files/asplos25_vr.pdf"><b>MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering</b></a>
+        <br>
+        <b>Weikai Lin*</b>, Yu Feng*, and Yuhao Zhu
+        <br>
+        [<a href="https://horizon-lab.org/metasapiens/">Project Page</a>], 
+        [<a href="files/asplos25_vr.pdf">Paper</a>], 
+        [<a href="https://github.com/horizon-research/Fov-3DGS/tree/main">Code</a>]
+        <br>
+    </div>
 </div>
-</div> -->
 
-<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">WACV 2025</div>
+            <img src='files/wacv25.png' alt="Private-Eye Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href=""><b>Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation</b></a>
+        <br>
+        Adith Boloor, <b>Weikai Lin</b>, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang
+        <br>
+        <i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision 2025)</i>
+        <br>
+        [<a href="">Paper(Coming Soon)</a>]
+    </div>
+</div>
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">HotMobile 2025</div>
+            <img src='files/hotmobile25.png' alt="Immersive Content Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href=""><b>Advancing Immersive Content Delivery with Dynamic 3D Gaussian Splatting</b></a>
+        <br>
+        Nan Wu*, <b>Weikai Lin*</b>, Ruizhi Cheng*, Bo Chen, Yuhao Zhu, Klara Nahrstedt, Bo Han
+        <br>
+        <i>HotMobile 2025 (26th International Workshop on Mobile Computing Systems and Applications)</i>
+        <br>
+        [<a href="">Paper(Coming Soon)</a>]
+    </div>
+</div>
+
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge_trans">TACO 2024</div>
+            <img src='files/taco24.png' alt="Potamoi Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href="https://doi.org/10.1145/3689340"><b>Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture</b></a>
+        <br>
+        Yu Feng*, <b>Weikai Lin*</b>, Zihan Liu, Jingwen Leng, Minyi Guo, Han Zhao, Xiaofeng Hou, Jieru Zhao, Yuhao Zhu
+        <br>
+        <i>TACO 2024 (ACM Transactions on Architecture and Code Optimization)</i>
+        <br>
+        [<a href="files/taco24.pdf">Paper</a>]
+    </div>
+</div>
+
+
+
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">IROS 2024</div>
+            <img src='files/iros24.png' alt="OW3Det Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10802635"><b>OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving</b></a>
+        <br>
+        Wenfei Hu, <b>Weikai Lin</b>, Hongyu Fang, Yi Wang, Dingsheng Luo
+        <br>
+        <i>IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>
+        <br>
+        [<a href="files/iros24.pdf">Paper</a>]
+    </div>
+</div>
+
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge_proj">Open-Sourced Project</div>
+            <img src='files/vr_proj.png' alt="FPGA Demo Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href="https://github.com/horizon-research/hvs_vr_encoding"><b>Exploiting Human Color Discrimination for Memory and Energy-Efficient Image Encoding in Virtual Reality: An FPGA Demo</b></a>
+        <br>
+        <i>Open-Sourced Project</i>, including highly optimized CPU/GPU/FPGA implementations.
+        <br>
+        [<a href="https://github.com/horizon-research/hvs_vr_encoding">Project Page</a>]
+    </div>
+</div>
+
+<h2>📚 <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ" target="_blank" style="text-decoration: underline; color: #1e90ff;">[Full Publications List (Google Scholar)]</a></h2>
+
+
+---
 
 ## 📖 _Educations_
 - **University of Rochester**: Ph.D. in Computer Science (2023-Present)  
