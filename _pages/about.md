@@ -65,13 +65,13 @@ Operating Systems)</i>
         </div>
     </div>
     <div class='paper-box-text'>
-        <a href=""><b>Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation</b></a>
+        <a href="files/wacv25.pdf"><b>Private-Eye: In-Sensor Privacy Preservation Through Optical Feature Separation</b></a>
         <br>
         Adith Boloor, <b>Weikai Lin</b>, Tianrui Ma, Yu Feng, Yuhao Zhu, Xuan Zhang
         <br>
         <i>WACV 2025 (IEEE/CVF Winter Conference on Applications of Computer Vision 2025)</i>
         <br>
-        [<a href="">Paper(Coming Soon)</a>]
+        [<a href="files/wacv25.pdf">Paper</a>]
     </div>
 </div>
 
