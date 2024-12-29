@@ -131,7 +131,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <div class='paper-box'>
     <div class='paper-box-image'>
         <div>
-            <div class="badge">arXiv 2024</div>
+            <div class="badge_proj">arXiv 2024</div>
             <img src='files/asplos25_vr.png' alt="RTGS Thumbnail" width="100%">
         </div>
     </div>
@@ -140,7 +140,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
         <br>
         <b>Weikai Lin</b>, Yu Feng, and Yuhao Zhu
         <br>
-        <i>arXiv preprint arXiv:2407.00435 (2024)</i>
+        <i>arXiv preprint arXiv:2407.00435v2 (2024)</i>
         <br>
         (Preprint and Shortened Version of MetaSapiens)
         <br>
