@@ -31,7 +31,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 </div>
 
 
-## 📝 _Publications after 2024_ {#publications}
+## 📝 _Publications since 2024_ {#publications}
 
 ( * : Equal contribution.)
 
