@@ -12,7 +12,9 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="files/Weikai_Academic_CV.pdf">CV</a>.
 
-🤝 **Looking for collaborations to work on impactful projects!**
+🤝 **Looking for collaborations to work on impactful projects!**  
+🌟 **Actively seeking a summer internship opportunity for 2025!**
+
 
 ## 🔥 _News_
 <div class="scroll-box" style="height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background-color: #fafafa; color: #333;">
@@ -29,7 +31,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 </div>
 
 
-## 📝 _Publications_ (after 2024) {#publications}
+## 📝 _Publications after 2024_ {#publications}
 
 ( * : Equal contribution.)
 
@@ -148,25 +150,83 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 ---
 
 ## 📖 _Educations_
-- **University of Rochester**: Ph.D. in Computer Science (2023-Present)  
-    - Advisor: [Yuhao Zhu](https://yuhaozhu.com/)
-    - Research Interests: Computer Graphics, AR/VR, Sensor Design, Computer Architecture.
-- **Peking University**: M.Sc. in Intelligence Science and Technology (AI) (2020-2023) 
-    - Advisor: Dingsheng Luo
-    - Research Interests: Robotics, Artificial Intelligence, Autonomous Driving.
-- **Tsinghua University**: B.E. in Electronic Engineering (2016-2020)  
-    - Advisor: Li Su
-    - Research Interests: Software-Hardware Co-design, Error Correction Code in Wireless Communication System.
 
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-# 💻 Internships
-- *2022.07 - 2023.02*, [AMD](https://www.amd.com/en.html), Beijing, China.
-    - SLAMs for Autonomous Driving System.
-    - AMD GPUs Testing and Evaluation.
-- *2022 - 2023*, Chinese Academy of Science, Beijing, China.
-  - HLS-based (High-Level-Synthesis) wireless communication system development.
-- *2019.07 - 2019.08*, [Cambricon](https://www.cambricon.com/), Beijing, China.
-  -  Neural Networks pruning.
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/uofr.png" alt="University of Rochester Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>University of Rochester</b>: Ph.D. in Computer Science, 2023-Present</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>Advisor: <a href="https://yuhaozhu.com/">Yuhao Zhu</a></li>
+            <li>Current GPA: 3.96/4.0</li>
+            <li>Research Interests: Computer Graphics, AR/VR, Sensor Design, Computer Architecture.</li>
+        </ul>
+    </div>
+</div>
+
+---
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/pku.png" alt="Peking University Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>Peking University</b>: M.Sc. in Intelligence Science and Technology (AI), 2020-2023</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>Advisor: Dingsheng Luo</li>
+            <li>GPA: 3.73/4.0 (90+/100)</li>
+            <li>Research Interests: Robotics, Artificial Intelligence, Autonomous Driving.</li>
+        </ul>
+    </div>
+</div>
+
+---
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/thu.png" alt="Tsinghua University Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>Tsinghua University</b>: B.E. in Electronic Engineering (2016-2020)</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>Advisor: Li Su</li>
+            <li>Research Interests: Software-Hardware Co-design, Error Correction Code in Wireless Communication System.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+## 💻 Internships
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/amd.png" alt="AMD Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>2022.07 - 2023.02</b>, <a href="https://www.amd.com/en.html">AMD</a>, Beijing, China</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>SLAMs for Autonomous Driving System</li>
+            <li>AMD GPUs Testing and Evaluation</li>
+        </ul>
+    </div>
+</div>
+
+---
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/cas.jpeg" alt="Chinese Academy of Sciences Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>2022 - 2023</b>, Chinese Academy of Science, Beijing, China</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>HLS-based (High-Level-Synthesis) wireless communication system development</li>
+        </ul>
+    </div>
+</div>
+
+---
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="images/cambricon.png" alt="Cambricon Logo" style="width: 15%; height: auto; margin-right: 15px;">
+    <div>
+        <p><b>2019.07 - 2019.08</b>, <a href="https://www.cambricon.com/">Cambricon</a>, Beijing, China</p>
+        <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
+            <li>Neural Networks pruning</li>
+        </ul>
+    </div>
+</div>
