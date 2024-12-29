@@ -135,7 +135,7 @@ Operating Systems)</i>
     <div class='paper-box-image'>
         <div>
             <div class="badge_proj">arXiv 2024</div>
-            <img src='files/asplos25_vr.png' alt="RTGS Thumbnail" width="100%">
+            <img src='files/rtgs.png' alt="RTGS Thumbnail" width="100%">
         </div>
     </div>
     <div class='paper-box-text'>
