@@ -204,7 +204,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <img src="images/thu.png" alt="Tsinghua University Logo" style="width: 15%; height: auto; margin-right: 15px;">
     <div>
-        <p><b>Tsinghua University</b>: B.E. in Electronic Engineering (2016-2020)</p>
+        <p><b>Tsinghua University</b>: B.E. in Electronic Engineering, 2016-2020</p>
         <ul style="list-style-position: inside; padding-left: 0; margin-left: 15px;">
             <li>Advisor: Li Su</li>
             <li>Research Interests: Software-Hardware Co-design, Error Correction Code in Wireless Communication System.</li>
