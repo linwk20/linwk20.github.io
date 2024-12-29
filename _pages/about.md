@@ -131,6 +131,27 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 <div class='paper-box'>
     <div class='paper-box-image'>
         <div>
+            <div class="badge">arXiv 2024</div>
+            <img src='files/asplos25_vr.png' alt="RTGS Thumbnail" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text'>
+        <a href="https://arxiv.org/abs/2407.00435v2"><b>RTGS: Enabling Real-Time Gaussian Splatting on Mobile Devices Using Efficiency-Guided Pruning and Foveated Rendering</b></a>
+        <br>
+        <b>Weikai Lin</b>, Yu Feng, and Yuhao Zhu
+        <br>
+        <i>arXiv preprint arXiv:2407.00435 (2024)</i>
+        <br>
+        (Preprint and Shortened Version of MetaSapiens)
+        <br>
+        [<a href="https://arxiv.org/abs/2407.00435v2">Paper</a>]
+    </div>
+</div>
+
+
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
             <div class="badge_proj">Open-Sourced Project</div>
             <img src='files/vr_proj.png' alt="FPGA Demo Thumbnail" width="100%">
         </div>
