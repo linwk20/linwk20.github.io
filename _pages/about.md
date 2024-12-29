@@ -125,7 +125,7 @@ Operating Systems)</i>
         <br>
         Wenfei Hu, <b>Weikai Lin</b>, Hongyu Fang, Yi Wang, Dingsheng Luo
         <br>
-        <i>IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems)</i>
+        <i>IROS 2024 (IEEE/RSJ International Conference on Intelligent Robots and Systems 2024)</i>
         <br>
         [<a href="files/iros24.pdf">Paper</a>]
     </div>
