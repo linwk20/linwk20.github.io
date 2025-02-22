@@ -18,11 +18,13 @@
             {% if site.data.venues[entry.abbr].url %}
               <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
             {% else %}
-              <div style="color:#000000">{{- entry.abbr -}}</div>
+              <div style="color:#ffffff">{{- entry.abbr -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100" style="background-color:#4E828E">
+            <div style="color:#ffffff">{{- entry.abbr -}}</div>
+          </abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
