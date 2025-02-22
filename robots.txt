@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://linwk20.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://linwk20.github.io/linwk20.github.io_dark//sitemap.xml
