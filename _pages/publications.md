@@ -2,11 +2,11 @@
 layout: page
 permalink: /publications/
 title: Publications📝
-description: ( * Indicates Equal contributions.)
+description: 
 nav: true
 nav_order: 2
 ---
-
+( * Indicates Equal contributions.)
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
