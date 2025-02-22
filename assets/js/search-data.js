@@ -7,14 +7,14 @@ ninja.data = [{
     title: "About Me🌟",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/al-folio/";
+      window.location.href = "/";
     },
   },{id: "nav-publications",
           title: "Publications📝",
           description: "( * Indicates Equal contributions.)",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/publications/";
+            window.location.href = "/publications/";
           },
         },{id: "news-our-paper-metasapiens-accepted-to-asplos-2025",
           title: 'Our paper, Metasapiens, accepted to ASPLOS 2025.',
