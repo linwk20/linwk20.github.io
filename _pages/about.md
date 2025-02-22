@@ -53,7 +53,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
 
 <style>
   .custom-links a:hover {
-    opacity: 0.5; /* 或者變為透明 */
+    opacity: 0.8; /* 或者變為透明 */
   }
 </style>
 
