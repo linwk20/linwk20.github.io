@@ -28,7 +28,9 @@ announcements:
 
 I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, AR/VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="assets/pdf/Weikai_Academic_CV.pdf">CV</a>.
+&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="assets/pdf/Weikai_Academic_CV.pdf">CV</a>. 👉 If you are interested in collaboration, Feel free to reach out via email.
+
+
 <p class="custom-links" style="text-align: left;">
   <a href="https://www.linkedin.com/in/weikai-lin-10190a261" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; margin-right: 15px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="18" height="18" style="margin-right: 5px;">
