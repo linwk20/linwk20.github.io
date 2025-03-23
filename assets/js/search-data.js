@@ -34,6 +34,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-snappix-accepted-to-dac-2025",
           title: 'Our paper, SnapPix, accepted to DAC 2025.',
           description: "",
+          section: "News",},{id: "news-one-paper-accepted-to-isca-2025",
+          title: 'One paper accepted to ISCA 2025.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
