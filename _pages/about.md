@@ -8,8 +8,16 @@ profile:
   align: right
   image: lwk.jpg
   image_circular: false # crops the image to make it circular
-  more_info: 
-
+  more_info: >
+      <a href="https://www.linkedin.com/in/weikai-lin-10190a261" target="_blank">
+        LinkedIn
+      </a>/
+      <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ"target="_blank">
+      Google Scholar
+      </a>/
+      <a href="https://github.com/linwk20" target="_blank">
+        GitHub
+      </a>
 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -28,9 +36,9 @@ announcements:
 
 I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, AR/VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="assets/pdf/Weikai_Academic_CV.pdf">CV</a>. 👉 If you are interested in collaboration, Feel free to reach out via email.
+&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="assets/pdf/Weikai_Academic_CV.pdf">CV</a>. 👉 If you are interested in collaboration, Feel free to reach out via email: <a href="wlin33@ur.rochester.edu">wlin33 at ur.rochester.edu</a>
 
-
+<!-- 
 <p class="custom-links" style="text-align: left;">
   <a href="https://www.linkedin.com/in/weikai-lin-10190a261" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; margin-right: 15px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="18" height="18" style="margin-right: 5px;">
@@ -57,7 +65,7 @@ I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https
   .custom-links a:hover {
     opacity: 0.8; /* 或者變為透明 */
   }
-</style>
+</style> -->
 
 
 
