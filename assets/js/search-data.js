@@ -37,8 +37,8 @@ ninja.data = [{
           section: "News",},{id: "news-one-paper-accepted-to-isca-2025",
           title: 'One paper accepted to ISCA 2025.',
           description: "",
-          section: "News",},{id: "news-our-paper-metasapiens-received-asplos-39-25-best-paper-award",
-          title: 'Our paper, Metasapiens, received ASPLOS&amp;#39;25 Best Paper Award.',
+          section: "News",},{id: "news-our-paper-metasapiens-received-asplos-25-best-paper-award",
+          title: 'Our paper, Metasapiens, received ASPLOS’25 Best Paper Award.',
           description: "",
           section: "News",},{
       id: 'light-theme',
