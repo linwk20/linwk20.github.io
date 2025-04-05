@@ -33,10 +33,23 @@ announcements:
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #   limit: 3 # leave blank to include all the blog posts
 ---
+<p style="margin-bottom: 0.5em;">
+I am a Ph.D. student at University of Rochester, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. from Tsinghua University and M.Sc. from Peking University. Find more details in <a href="assets/pdf/Weikai_Academic_CV.pdf">my CV</a>. <br> 💻 My current research aims to bridge the gap between hardware and software through system-level co-optimization, including but not limited to:
+</p>
+<ul style="margin-bottom: 0.5em;">
+  <li>
+    🚀 <strong>AR/VR Neural Rendering and Acceleration:</strong>
+    Developing neural rendering algorithms for AR/VR systems and designing corresponding hardware accelerators.
+     <em>[ASPLOS'25a, ASPLOS'25b, ISCA'25, HotMobile'25, TACO'24]</em>
+  </li>
+  <li>
+    📷 <strong>Imaging System Design:</strong>
+    Designing sensors and optics for imaging systems, along with co-optimized downstream vision models.
+    <em>[DAC'25, WACV'25]</em>
+  </li>
+</ul>
+👉 If you are interested in collaboration, Feel free to reach out via email: <a href="wlin33@ur.rochester.edu">wlin33 at ur.rochester.edu</a>.
 
-I am a Ph.D. student at the University of Rochester advised by [Yuhao Zhu](https://yuhaozhu.com/), focusing on Computer Graphics, AR/VR, Sensor Design, Computer Architecture, and Robotics. My goal is to bridge the gap between hardware and software through system-level design and optimization.
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;  Previously, I earned my B.E. from Tsinghua University and my M.Sc. from Peking University. I have also interned at AMD and Cambricon Technologies. Find more details in my <a href="assets/pdf/Weikai_Academic_CV.pdf">CV</a>. 👉 If you are interested in collaboration, Feel free to reach out via email: <a href="wlin33@ur.rochester.edu">wlin33 at ur.rochester.edu</a>.
 
 <!-- 
 <p class="custom-links" style="text-align: left;">
