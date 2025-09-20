@@ -40,7 +40,7 @@ I am a Ph.D. student at University of Rochester, advised by <a href="https://yuh
   <li>
     🚀 <strong>AR/VR Neural Rendering and Acceleration:</strong>
     Developing neural rendering algorithms for AR/VR systems and designing corresponding hardware accelerators.
-     <em>[ASPLOS'25a, ASPLOS'25b, ISCA'25, HotMobile'25, TACO'24]</em>
+     <em>[SIGGRAPH Asia'25, ASPLOS'25a, ASPLOS'25b, ISCA'25, HotMobile'25, TACO'24]</em>
   </li>
   <li>
     📷 <strong>Imaging System Design:</strong>
