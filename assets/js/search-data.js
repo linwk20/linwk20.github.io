@@ -40,6 +40,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-metasapiens-received-asplos-25-best-paper-award",
           title: 'Our paper, Metasapiens, received ASPLOS’25 Best Paper Award.',
           description: "",
+          section: "News",},{id: "news-our-paper-powergs-accepted-to-siggraph-asia-2025-see-you-in-hong-kong",
+          title: 'Our paper, PowerGS, accepted to Siggraph Asia 2025. See you in Hong Kong....',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
