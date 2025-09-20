@@ -6,7 +6,7 @@ subtitle: Department of Computer Science @ <a href='https://www.rochester.edu/'>
 
 profile:
   align: right
-  image: lwk.jpg
+  image: lwk2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
       <a href="https://www.linkedin.com/in/weikai-lin-10190a261" target="_blank">
