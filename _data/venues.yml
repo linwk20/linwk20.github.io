@@ -5,11 +5,11 @@
 # "PhysRev":
 #   url: https://journals.aps.org/
 
-"Arxiv":
-  color: "#009f36"
+"ArXiv":
+  color: "#B22E32"
 
 "Project":
-  color: "#009f36"
+  color: "#09847a"
   
 "TACO":
   color: "#2698ba"
