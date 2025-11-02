@@ -34,7 +34,7 @@ announcements:
 #   limit: 3 # leave blank to include all the blog posts
 ---
 <p style="margin-bottom: 0.5em;">
-I am a Ph.D. student at University of Rochester, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. from Tsinghua University and M.Sc. from Peking University. Find more details in <a href="assets/pdf/Weikai_Academic_CV.pdf">my CV</a>. <br> 💻 My current research aims to bridge the gap between hardware and software through system-level co-optimization, including but not limited to:
+I am a Ph.D. student at University of Rochester, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. from Tsinghua University and M.Sc. from Peking University. Find more details in <a href="assets/pdf/Weikai_Academic_CV.pdf">my CV (updated 11/02/2025)</a>. <br> 💻 My current research aims to bridge the gap between hardware and software through system-level co-optimization, including but not limited to:
 </p>
 <ul style="margin-bottom: 0.5em;">
   <li>
