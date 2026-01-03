@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me🌟
+title: About Me 🌟
 permalink: /
 subtitle: Department of Computer Science @ <a href='https://www.rochester.edu/'>University of Rochester</a>, NY, USA
 
@@ -19,7 +19,6 @@ profile:
         GitHub
       </a>
 
-
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -28,19 +27,26 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit:  # leave blank to include all the news in the `_news` folder
 
-# latest_posts:
-#   enabled: true
-#   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-#   limit: 3 # leave blank to include all the blog posts
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
-<p style="margin-bottom: 0.5em;">
-I am a Ph.D. student at University of Rochester, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. from Tsinghua University and M.Sc. from Peking University. Find more details in <a href="assets/pdf/Weikai_Academic_CV.pdf">my CV (updated 11/02/2025)</a>. <br> 💻 My current research aims to bridge the gap between hardware and software through system-level co-optimization, including but not limited to:
-</p>
-<ul style="margin-bottom: 0.5em;">
+
+<div class="intro-text">
+  <p>
+    I am a Ph.D. student at University of Rochester, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. from Tsinghua University and M.Sc. from Peking University. Find more details in <a href="assets/pdf/Weikai_Academic_CV.pdf">my CV (updated 11/02/2025)</a>.
+  </p>
+  <p>
+    💻 My current research aims to bridge the gap between hardware and software through system-level co-optimization, including but not limited to:
+  </p>
+</div>
+
+<ul class="research-interests">
   <li>
     🚀 <strong>AR/VR Neural Rendering and Acceleration:</strong>
     Developing neural rendering algorithms for AR/VR systems and designing corresponding hardware accelerators.
-     <em>[SIGGRAPH Asia'25, ASPLOS'25a, ASPLOS'25b, ISCA'25, HotMobile'25, TACO'24]</em>
+    <em>[SIGGRAPH Asia'25, ASPLOS'25a, ASPLOS'25b, ISCA'25, HotMobile'25, TACO'24]</em>
   </li>
   <li>
     📷 <strong>Imaging System Design:</strong>
@@ -48,37 +54,7 @@ I am a Ph.D. student at University of Rochester, advised by <a href="https://yuh
     <em>[DAC'25, WACV'25]</em>
   </li>
 </ul>
-👉 If you are interested in collaboration, Feel free to reach out via email: <a href="wlin33@ur.rochester.edu">wlin33 at ur.rochester.edu</a>.
 
-
-<!-- 
-<p class="custom-links" style="text-align: left;">
-  <a href="https://www.linkedin.com/in/weikai-lin-10190a261" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; margin-right: 15px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="18" height="18" style="margin-right: 5px;">
-    <span>LinkedIn</span>
-  </a>
-
-  <a href="https://github.com/linwk20" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; margin-right: 15px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="18" height="18" style="margin-right: 5px;">
-    <span>GitHub</span>
-  </a>
-
-  <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; margin-right: 15px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" width="18" height="18" style="margin-right: 5px;">
-    <span>Google Scholar</span>
-  </a>
-
-  <a href="mailto:wlin33@ur.rochester.edu" style="text-decoration:none; display: inline-flex; align-items: center; font-size: 16px; border-bottom: 1px dashed #888; transition: border-bottom 0.2s ease;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" width="18" height="18" style="margin-right: 5px;">
-    <span>wlin33 at ur.rochester.edu</span>
-  </a>
+<p>
+  👉 If you are interested in collaboration, feel free to reach out via email: <a href="mailto:wlin33@ur.rochester.edu">wlin33@ur.rochester.edu</a>.
 </p>
-
-<style>
-  .custom-links a:hover {
-    opacity: 0.8; /* 或者變為透明 */
-  }
-</style> -->
-
-
-

@@ -23,3 +23,96 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* =========================================
+   Custom Aesthetic Improvements
+   ========================================= */
+
+/* Typography & Spacing */
+body {
+  // Ensure a clean, modern font stack
+  font-family: "Roboto", "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* Blog List Improvements */
+.post-list li {
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid transparent; /* Prepare for hover */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.post-list li:hover {
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  border-color: var(--global-divider-color);
+}
+
+.post-title {
+  font-weight: 700;
+}
+
+/* Publications List Improvements */
+ol.bibliography li {
+  padding: 25px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid transparent; /* Match Blog Style */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+ol.bibliography li:hover {
+  background-color: var(--global-card-bg-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  border-color: var(--global-divider-color);
+  /* Removed the left purple border as requested to match Blog style cleaner look */
+  border-left-color: transparent; 
+}
+
+/* Profile Image Enhancement */
+.profile img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  /* Removed hover transform effect */
+}
+
+/* Smooth Links */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* About Me Content Spacing */
+.post-content, .clearfix {
+  font-size: 1.05rem; /* Slightly larger text for readability */
+}
+
+/* Specific About Me Classes */
+.intro-text p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  color: var(--global-text-color);
+}
+
+.research-interests {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.research-interests li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
