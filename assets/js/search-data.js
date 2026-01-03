@@ -16,7 +16,47 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-our-paper-metasapiens-accepted-to-asplos-2025",
+        },{id: "nav-blog-️",
+          title: "Blog ✍️",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-why-rebuild-general-agents-introducing-pycursor-agent",
+      
+        title: "Why Rebuild General Agents? Introducing pycursor_agent",
+      
+      description: "Why rebuild general agents when Cursor already provides a capable one? I built `pycursor_agent` to invoke Cursor&#39;s agent directly from Python scripts and pipelines.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/introducing-pycursor-agent/";
+        
+      },
+    },{id: "post-building-alphago-vs-mastering-go-the-ai-replacement-boundary",
+      
+        title: "Building AlphaGo vs. Mastering Go: The AI Replacement Boundary",
+      
+      description: "Should we focus on mastering Go as human players, or step back and build AlphaGo? I&#39;m exploring the boundaries of AI replacement in daily work to avoid cultivating obsolete skills.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/building-alphago-vs-mastering-go/";
+        
+      },
+    },{id: "post-hello-world",
+      
+        title: "Hello World",
+      
+      description: "First post on the new blog!",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/hello-world/";
+        
+      },
+    },{id: "news-our-paper-metasapiens-accepted-to-asplos-2025",
           title: 'Our paper, Metasapiens, accepted to ASPLOS 2025.',
           description: "",
           section: "News",},{id: "news-our-paper-privateeye-accepted-to-wacv-2025",
