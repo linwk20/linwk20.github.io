@@ -83,6 +83,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-powergs-accepted-to-siggraph-asia-2025-see-you-in-hong-kong",
           title: 'Our paper, PowerGS, accepted to Siggraph Asia 2025. See you in Hong Kong....',
           description: "",
+          section: "News",},{id: "news-one-paper-accepted-to-cvpr-2026",
+          title: 'One paper accepted to CVPR 2026.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
