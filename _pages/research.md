@@ -179,7 +179,7 @@ html[data-theme="dark"] .pub-entry {
 My research spans across algorithm and hardware. I'm interested in AR/VR Graphics, Hardware Architecture, Imaging System, and AI (e.g. Embodied Intelligence, Generative AI).
 </p>
 
-<p style="font-size: 0.9rem; color: #888; margin-bottom: 1.5rem;">Click on each area below to expand details and related publications.</p>
+<p style="color: #888; margin-bottom: 1.5rem;">Click on each area below to expand details and related publications.</p>
 
 <div class="research-area rendering">
 <details class="area-details">
