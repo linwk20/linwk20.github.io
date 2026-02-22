@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /experience/
-title: Experience 💼
+title: 💼 Experience
 description:
 nav: true
 nav_order: 4
@@ -78,7 +78,7 @@ html[data-theme="dark"] .exp-entry {
 }
 </style>
 
-<h3 style="font-weight: normal; margin-top: 0;">Education 🎓</h3>
+<h3 style="font-weight: normal; margin-top: 0;">🎓 Education</h3>
 
 <div class="exp-entry">
   <div class="exp-logo">
@@ -131,7 +131,7 @@ html[data-theme="dark"] .exp-entry {
   </div>
 </div>
 
-<h3 style="font-weight: normal; margin-top: 1rem;">Work Experience 💼</h3>
+<h3 style="font-weight: normal; margin-top: 1rem;">💼 Work Experience</h3>
 
 <div class="exp-entry">
   <div class="exp-logo">
