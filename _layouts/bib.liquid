@@ -47,9 +47,32 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-11{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {%- if entry.html -%}
+        {%- if entry.html contains '://' -%}
+          <a href="{{ entry.html }}">{{ entry.title }}</a>
+        {%- else -%}
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}">{{ entry.title }}</a>
+        {%- endif -%}
+      {%- elsif entry.pdf -%}
+        {%- if entry.pdf contains '://' -%}
+          <a href="{{ entry.pdf }}">{{ entry.title }}</a>
+        {%- else -%}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">{{ entry.title }}</a>
+        {%- endif -%}
+      {%- elsif entry.arxiv -%}
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.title }}</a>
+      {%- else -%}
+        <a href="#">{{ entry.title }}</a>
+      {%- endif -%}
+    </div>
+    {% if entry.award %}
+      <span style="color: #e74c3c !important; font-weight: 700 !important; font-size: 0.95rem !important; display: block; margin: 2px 0;">
+        {%- if entry.award_name %}{{ entry.award_name }}{%- else %}Awarded{%- endif -%}
+      </span>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -178,10 +201,7 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
+      {% if entry.note %}{{ entry.note | strip }}, {% endif %}{{ periodical | strip }}
     </div>
 
     <!-- Links/Buttons -->

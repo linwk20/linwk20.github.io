@@ -4,6 +4,8 @@
 
 // Typography
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 p,
 h1,
 h2,
@@ -40,8 +42,8 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    color: var(--global-hover-color);
+    text-decoration: none;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -695,7 +697,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -757,7 +759,16 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 700;
+
+        a {
+          color: var(--global-theme-color);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-hover-color);
+          }
+        }
       }
 
       .author {
