@@ -87,7 +87,7 @@ details.pub-details summary {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.8rem;
 }
 
 details.area-details summary::-webkit-details-marker,
