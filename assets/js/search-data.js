@@ -37,15 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-why-rebuild-general-agents-introducing-pycursor-agent",
+        },{id: "post-re-reading-the-bitter-lesson",
       
-        title: "Why Rebuild General Agents? Introducing pycursor_agent",
+        title: "Re-reading The Bitter Lesson",
       
-      description: "Why rebuild general agents when Cursor already provides a capable one? I built `pycursor_agent` to invoke Cursor&#39;s agent directly from Python scripts and pipelines.",
+      description: "Sutton&#39;s Bitter Lesson has already been proved by the LLM moment. Now the same wave is reaching CV and CG. We should design for scalability, not for clever human priors.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2026/introducing-pycursor-agent/";
+          window.location.href = "/blog/2026/re-reading-the-bitter-lesson/";
+        
+      },
+    },{id: "post-embrace-ai-like-notion-does",
+      
+        title: "Embrace AI, Like Notion Does",
+      
+      description: "Intelligence is becoming infinite. Notion&#39;s CEO saw it first — and Notion is already building for it.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/embrace-ai-like-notion/";
         
       },
     },{id: "post-building-alphago-vs-mastering-go-the-ai-replacement-boundary",
@@ -57,17 +68,6 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2026/building-alphago-vs-mastering-go/";
-        
-      },
-    },{id: "post-hello-world",
-      
-        title: "Hello World",
-      
-      description: "First post on the new blog!",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2026/hello-world/";
         
       },
     },{id: "news-our-paper-metasapiens-accepted-to-asplos-2025",
