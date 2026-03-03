@@ -1,0 +1,3 @@
+[submodule "GES-triangle-viewer"]
+	path = GES-triangle-viewer
+	url = https://github.com/linwk20/GES-triangle-viewer.git
