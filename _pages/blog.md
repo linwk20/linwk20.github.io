@@ -31,7 +31,7 @@ pagination:
     <li style="margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px dashed #e0e0e0;">
       <h3>
         <a class="post-title" href="{{ post.url | relative_url }}" style="text-decoration: none;">
-          <i class="fa-solid fa-feather-pointed" style="color: #555; margin-right: 8px;"></i> {{ post.title }}
+          <i class="{{ post.icon | default: 'fa-solid fa-feather-pointed' }}" style="color: #555; margin-right: 8px;"></i> {{ post.title }}
         </a>
       </h3>
       <p class="post-meta" style="color: #888; font-size: 0.9em; margin-top: 5px;">

@@ -5,6 +5,7 @@ date:   2026-01-01
 categories: jekyll update
 tags: [getting started]
 description: "First post on the new blog!"
+published: false
 ---
 
 Welcome to my new blog! This is a sample post.

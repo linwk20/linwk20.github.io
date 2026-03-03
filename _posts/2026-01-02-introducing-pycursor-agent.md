@@ -6,6 +6,7 @@ description: >
   Why rebuild general agents when Cursor already provides a capable one? I built `pycursor_agent` to invoke Cursor's agent directly from Python scripts and pipelines.
 tags: ai tools coding cursor
 categories: coding
+published: false
 ---
 
 We’re already paying for Cursor. Cursor already has a pretty capable agent at a competitive price.
