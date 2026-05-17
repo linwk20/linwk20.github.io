@@ -276,6 +276,26 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
+    {% if entry.award_image %}
+      <div class="award-image">
+        {% assign award_image_alt = entry.award_image_alt | default: entry.award_name | default: 'Award certificate' %}
+        {% if entry.award_image contains '://' %}
+          <img class="award-certificate z-depth-1 rounded" src="{{ entry.award_image }}" alt="{{ award_image_alt }}" data-zoomable data-zoom-src="{{ entry.award_image }}">
+        {% else %}
+          {% assign award_image_path = entry.award_image | prepend: '/assets/img/award/' %}
+          {%
+            include figure.liquid
+            loading="lazy"
+            path=award_image_path
+            zoom_src=award_image_path
+            sizes = "260px"
+            class="award-certificate z-depth-1 rounded"
+            zoomable=true
+            alt=award_image_alt
+          %}
+        {% endif %}
+      </div>
+    {% endif %}
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}

@@ -828,6 +828,24 @@ footer.sticky-bottom {
         }
       }
 
+      .award-image {
+        max-width: 240px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.35rem;
+
+        figure {
+          margin: 0;
+        }
+
+        .award-certificate {
+          display: block;
+          width: 100%;
+          height: auto;
+          border: 1px solid var(--global-divider-color);
+          background: var(--global-card-bg-color);
+        }
+      }
+
       .badges {
         padding-bottom: 0.5rem;
         span {
