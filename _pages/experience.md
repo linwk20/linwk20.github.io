@@ -142,7 +142,7 @@ html[data-theme="dark"] .exp-entry {
       <span class="exp-company"><a href="https://www.meta.com/">Meta Platforms, Inc.</a></span>
       <span class="exp-date">May 2026 – Oct 2026</span>
     </div>
-    <div class="exp-role">Research Scientist Intern &middot; California, USA</div>
+    <div class="exp-role">Research Scientist Intern &middot; CA, USA</div>
   </div>
 </div>
 
@@ -175,7 +175,7 @@ html[data-theme="dark"] .exp-entry {
     <div class="exp-role">Co-op / Intern &middot; Beijing, China</div>
     <div class="exp-detail">
       Mentor: Fuwei Yang<br>
-      Project: SLAMs, ML workload testing and evaluation on AMD GPU.
+      Project: SLAMs, ML workload testing and evaluation on AMD GPUs. Participated in a ROCm release.
     </div>
   </div>
 </div>
