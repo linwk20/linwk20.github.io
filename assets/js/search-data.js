@@ -112,6 +112,9 @@ ninja.data = [{
           section: "News",},{id: "news-two-papers-accepted-to-cvpr-2026-on-sensor-vision-workshop-see-you-in-denver",
           title: 'Two papers accepted to CVPR 2026 On-Sensor Vision Workshop. See you in Denver!...',
           description: "",
+          section: "News",},{id: "news-i-have-joined-meta-as-a-research-scientist-intern",
+          title: 'I have joined Meta as a research scientist intern.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
