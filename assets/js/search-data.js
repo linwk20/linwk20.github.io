@@ -113,7 +113,7 @@ ninja.data = [{
           title: 'Two papers accepted to CVPR 2026 On-Sensor Vision Workshop. See you in Denver!...',
           description: "",
           section: "News",},{id: "news-i-have-joined-meta-as-a-research-scientist-intern",
-          title: 'I have joined Meta as a research scientist intern.',
+          title: 'I have joined Meta as a Research Scientist Intern.',
           description: "",
           section: "News",},{
       id: 'light-theme',
