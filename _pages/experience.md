@@ -135,6 +135,19 @@ html[data-theme="dark"] .exp-entry {
 
 <div class="exp-entry">
   <div class="exp-logo">
+    <img src="{{ '/assets/img/work_logos/meta.png' | relative_url }}" alt="Meta">
+  </div>
+  <div class="exp-content">
+    <div class="exp-header">
+      <span class="exp-company"><a href="https://www.meta.com/">Meta</a></span>
+      <span class="exp-date">May 2026 – Oct 2026</span>
+    </div>
+    <div class="exp-role">Research Scientist Intern &middot; California, USA</div>
+  </div>
+</div>
+
+<div class="exp-entry">
+  <div class="exp-logo">
     <img src="{{ '/assets/img/work_logos/pixocial.png' | relative_url }}" alt="Pixocial">
   </div>
   <div class="exp-content">
