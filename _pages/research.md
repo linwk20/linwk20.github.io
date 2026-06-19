@@ -200,7 +200,7 @@ Developing neural rendering algorithms for AR/VR systems and designing correspon
 <details class="pub-details">
 <summary>Related Publications</summary>
 <div class="pub-list">
-  <span class="pub-entry"><strong>[ECCV 2026]</strong> <a href="https://openreview.net/forum?id=fvbq0kupw7">ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
+  <span class="pub-entry"><strong>[ECCV 2026]</strong> <a href="https://arxiv.org/abs/2509.21541">ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
   <span class="pub-entry"><strong>[CVPR 2026]</strong> <span class="award">(Highlight)</span> <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_Seele_A_Unified_Acceleration_Framework_for_Real-Time_Gaussian_Splatting_on_CVPR_2026_paper.pdf">SeeLe: A Unified Acceleration Framework for Real-Time Gaussian Splatting on Mobile Devices</a></span>
   <span class="pub-entry"><strong>[SIGGRAPH Asia 2025]</strong> <a href="https://powergs.netlify.app/">PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in Power-Constrained XR Systems</a></span>
   <span class="pub-entry"><strong>[ASPLOS 2025]</strong> <span class="award">(Best Paper Award)</span> <a href="https://horizon-lab.org/metasapiens/">MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering</a></span>
