@@ -706,6 +706,23 @@ footer.sticky-bottom {
 
 // Publications
 
+.publication-section {
+  scroll-margin-top: 5rem;
+}
+
+.publication-note {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+
+  .inline-publication-highlight {
+    background: #ffffd0;
+    border-radius: 3px;
+    color: var(--global-text-color);
+    padding: 0.05rem 0.25rem;
+  }
+}
+
 .publications {
   margin-top: 1rem;
 
@@ -740,6 +757,15 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+
+      .publication-entry-highlight {
+        background: #ffffd0;
+        border-radius: 4px;
+      }
+
+      html[data-theme="dark"] & .publication-entry-highlight {
+        background: rgba(234, 212, 90, 0.1);
+      }
 
       .preview {
       }

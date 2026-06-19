@@ -64,13 +64,17 @@ layout: default
     {% endif %}
 
 
-    <!-- Selected papers -->
+    <!-- Publications -->
     {% if page.selected_papers %}
-      <h2 style="font-weight: normal;">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📝 Selected publications</a>
-      </h2>
-      ( * Indicates Equal contributions. See <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a> for full list.)
-      {% include selected_papers.liquid %}
+      <section id="publications" class="publication-section">
+        <h2 style="font-weight: normal;">
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📝 Publications</a>
+        </h2>
+        <p class="publication-note">
+          * Indicates Equal contributions, some papers are <span class="inline-publication-highlight">highlighted</span>. See <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a> for full list.
+        </p>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
     <!-- Social -->

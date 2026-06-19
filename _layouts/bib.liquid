@@ -1,6 +1,7 @@
 ---
 ---
-<div class="row">
+{% assign selected_flag = entry.selected | default: '' | downcase %}
+<div class="row publication-entry{% if selected_flag == 'true' %} publication-entry-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
