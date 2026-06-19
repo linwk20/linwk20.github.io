@@ -181,7 +181,7 @@ My research spans across algorithm and hardware. I'm interested in AR/VR Graphic
 
 <div class="research-area rendering">
 <details class="area-details">
-<summary><h3 style="display:inline; cursor:pointer;">AR/VR Neural Rendering and Hardware Acceleration</h3></summary>
+<summary><h3 style="display:inline; cursor:pointer;">Generative AI, AR/VR rendering and acceleration:</h3></summary>
 
 <p>
 Developing neural rendering algorithms for AR/VR systems and designing corresponding hardware accelerators. This includes real-time Gaussian splatting on mobile devices, foveated rendering pipelines, display-rendering power co-optimization, and streaming architectures for neural rendering.
@@ -193,14 +193,16 @@ Developing neural rendering algorithms for AR/VR systems and designing correspon
   <span>XR Systems</span>
   <span>Hardware Accelerator</span>
   <span>Neural Rendering</span>
+  <span>World Model</span>
+  <span>Diffusion Model</span>
 </div>
 
 <details class="pub-details">
 <summary>Related Publications</summary>
 <div class="pub-list">
-  <span class="pub-entry"><strong>[CVPR 2026]</strong> SeeLe: A Unified Acceleration Framework for Real-Time Gaussian Splatting on Mobile Devices</span>
+  <span class="pub-entry"><strong>[ECCV 2026]</strong> <a href="https://openreview.net/forum?id=fvbq0kupw7">ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
+  <span class="pub-entry"><strong>[CVPR 2026]</strong> <span class="award">(Highlight)</span> <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_Seele_A_Unified_Acceleration_Framework_for_Real-Time_Gaussian_Splatting_on_CVPR_2026_paper.pdf">SeeLe: A Unified Acceleration Framework for Real-Time Gaussian Splatting on Mobile Devices</a></span>
   <span class="pub-entry"><strong>[SIGGRAPH Asia 2025]</strong> <a href="https://powergs.netlify.app/">PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in Power-Constrained XR Systems</a></span>
-  <span class="pub-entry"><strong>[arXiv 2025]</strong> <a href="https://ctrlhair-arxiv.netlify.app/">ControlHair: Physically-based Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
   <span class="pub-entry"><strong>[ASPLOS 2025]</strong> <span class="award">(Best Paper Award)</span> <a href="https://horizon-lab.org/metasapiens/">MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering</a></span>
   <span class="pub-entry"><strong>[ASPLOS 2025]</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3676641.3716021">StreamGrid: Streaming Point Cloud Analytics via Compulsory Splitting and Deterministic Termination</a></span>
   <span class="pub-entry"><strong>[ISCA 2025]</strong> <a href="https://dl.acm.org/doi/10.1145/3695053.3731003">Lumina: Real-Time Mobile Neural Rendering by Exploiting Computational Redundancy</a></span>
