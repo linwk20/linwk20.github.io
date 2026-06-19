@@ -824,6 +824,10 @@ html[data-theme="dark"] .chinese-name {
 
         html[data-theme="dark"] & a {
           color: #6ecff6;
+
+          &:hover {
+            color: var(--global-hover-color);
+          }
         }
       }
 
