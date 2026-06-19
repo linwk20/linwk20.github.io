@@ -115,6 +115,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-joined-meta-as-a-research-scientist-intern",
           title: 'I have joined Meta as a Research Scientist Intern.',
           description: "",
+          section: "News",},{id: "news-controlhair-is-accepted-to-eccv-2026",
+          title: 'ControlHair is accepted to ECCV 2026.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
