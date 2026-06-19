@@ -27,7 +27,7 @@ latest_posts:
   <p>
     I am a Computer Science Ph.D. student at <a href="https://www.rochester.edu/">University of Rochester</a>, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. in Electronic Engineering from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> and M.Sc. in Intelligent Science from <a href="https://english.pku.edu.cn/">Peking University</a>.
     <br>
-    <span style="font-weight: 700;">Research.</span> My research spans across algorithm and hardware. I'm interested in AR/VR Graphics, Hardware Architecture, Imaging System, and AI (e.g. Embodied Intelligence, Generative AI). More details on my <a href="/research/">research page</a>.
+    <span style="font-weight: 700;">Research.</span> My research spans across algorithm and hardware. I'm interested in AR/VR, Hardware Architecture, Imaging System, and AI (e.g. Embodied Intelligence, Generative AI). More details on my <a href="/research/">research page</a>.
   </p>
 </div>
 
