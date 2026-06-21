@@ -232,6 +232,8 @@ Designing sensors and optics for imaging systems, along with co-optimized downst
 <details class="pub-details">
 <summary>Related Publications</summary>
 <div class="pub-list">
+  <span class="pub-entry"><strong>[DAC 2026]</strong> <a href="https://63dac.conference-program.com/presentation/?id=RESEARCH2996&sess=sess150">HoloCode: Hybrid Optical-Electronic Edge Encoding for Privacy-Preserving Cloud Training</a></span>
+  <span class="pub-entry"><strong>[DAC 2026]</strong> <a href="https://63dac.conference-program.com/presentation/?id=SSSN118&sess=sess254">Invited Paper: A Quantitative Approach to Exploring Novel Image Sensor Architecture Towards Autonomous Edge Machine Vision</a></span>
   <span class="pub-entry"><strong>[DAC 2025]</strong> <a href="https://arxiv.org/abs/2504.04535">SnapPix: Efficient-Coding-Inspired In-Sensor Compression for Edge Vision</a></span>
   <span class="pub-entry"><strong>[WACV 2025]</strong> <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Boloor_PrivateEye_In-Sensor_Privacy_Preservation_Through_Optical_Feature_Separation_WACV_2025_paper.pdf">PrivateEye: In-Sensor Privacy Preservation Through Optical Feature Separation</a></span>
 </div>
