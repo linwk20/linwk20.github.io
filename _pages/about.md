@@ -27,7 +27,7 @@ latest_posts:
   <p>
     I am a Computer Science Ph.D. student at <a href="https://www.rochester.edu/">University of Rochester</a>, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. in Electronic Engineering from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> and M.Sc. in Intelligent Science from <a href="https://english.pku.edu.cn/">Peking University</a>.
     <br>
-    <span style="font-weight: 700;">Research.</span> I have published in AR/VR Systems, AI Systems, and Imaging Systems. More details are available on my <a href="/research/">research page</a>.
+    <span style="font-weight: 700;">Research.</span> I am interested in end-to-end hardware-software co-design. My publications span AR/VR, AI, and imaging systems. More details are available on my <a href="/research/">research page</a>.
     <br>
     I am also an AI Maximalist interested in Autoresearch/AI4S, aiming to accelerate scientific discovery by orders of magnitude and unlock research that was previously impossible.
   </p>

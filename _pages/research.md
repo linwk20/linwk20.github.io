@@ -174,7 +174,7 @@ html[data-theme="dark"] .pub-entry {
 </style>
 
 <p class="research-intro">
-I have published in AR/VR Systems, AI Systems, and Imaging Systems.
+I am interested in end-to-end hardware-software co-design. My publications span AR/VR, AI, and imaging systems.
 <br>
 I am also an AI Maximalist interested in Autoresearch/AI4S, aiming to accelerate scientific discovery by orders of magnitude and unlock research that was previously impossible.
 </p>
