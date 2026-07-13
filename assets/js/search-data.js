@@ -118,6 +118,12 @@ ninja.data = [{
           section: "News",},{id: "news-controlhair-is-accepted-to-eccv-2026",
           title: 'ControlHair is accepted to ECCV 2026.',
           description: "",
+          section: "News",},{id: "news-unimod-is-accepted-to-acm-mm-2026",
+          title: 'UniMod is accepted to ACM MM 2026.',
+          description: "",
+          section: "News",},{id: "news-lowpowar-is-accepted-to-tvcg-2026-ismar-journal-track",
+          title: 'LowPowAR is accepted to TVCG 2026 (ISMAR Journal Track).',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
