@@ -9,12 +9,19 @@ nav_order: 1
 
 <style>
 /* --- Per-category colors --- */
-/* --- Rendering: warm orange --- */
-.research-area.rendering {
+/* --- AI systems: red --- */
+.research-area.ai-systems {
+  border-left: 4px solid #b23a48;
+  background: #fbeff1;
+}
+.research-area.ai-systems .research-tags span { background: #b23a48; }
+
+/* --- AR/VR systems: warm orange --- */
+.research-area.arvr {
   border-left: 4px solid #e67e22;
   background: #fdf2e9;
 }
-.research-area.rendering .research-tags span { background: #e67e22; }
+.research-area.arvr .research-tags span { background: #e67e22; }
 
 /* --- Imaging: green --- */
 .research-area.imaging {
@@ -23,17 +30,10 @@ nav_order: 1
 }
 .research-area.imaging .research-tags span { background: #10ac84; }
 
-/* --- Robotics: blue --- */
-.research-area.robotics {
-  border-left: 4px solid #3498db;
-  background: #eaf2f8;
-}
-.research-area.robotics .research-tags span { background: #3498db; }
-
 /* --- Dark mode --- */
-html[data-theme="dark"] .research-area.rendering { background: #2d2114; }
+html[data-theme="dark"] .research-area.ai-systems { background: #321d22; }
+html[data-theme="dark"] .research-area.arvr { background: #2d2114; }
 html[data-theme="dark"] .research-area.imaging { background: #1a2f2a; }
-html[data-theme="dark"] .research-area.robotics { background: #1a2333; }
 
 /* --- Base styles --- */
 .research-area {
@@ -119,20 +119,20 @@ details.pub-details summary:hover {
   opacity: 0.8;
 }
 
-.rendering details.area-details summary,
-.rendering details.area-details summary::before,
-.rendering details.pub-details summary,
-.rendering details.pub-details summary::before { color: #e67e22; }
+.ai-systems details.area-details summary,
+.ai-systems details.area-details summary::before,
+.ai-systems details.pub-details summary,
+.ai-systems details.pub-details summary::before { color: #b23a48; }
+
+.arvr details.area-details summary,
+.arvr details.area-details summary::before,
+.arvr details.pub-details summary,
+.arvr details.pub-details summary::before { color: #e67e22; }
 
 .imaging details.area-details summary,
 .imaging details.area-details summary::before,
 .imaging details.pub-details summary,
 .imaging details.pub-details summary::before { color: #10ac84; }
-
-.robotics details.area-details summary,
-.robotics details.area-details summary::before,
-.robotics details.pub-details summary,
-.robotics details.pub-details summary::before { color: #3498db; }
 
 .pub-list {
   margin-top: 0.5rem;
@@ -174,17 +174,17 @@ html[data-theme="dark"] .pub-entry {
 </style>
 
 <p class="research-intro">
-My research spans across algorithm and hardware. I'm interested in AR/VR Graphics, Hardware Architecture, Imaging System, and AI (e.g. Embodied Intelligence, Generative AI).
+I have published in AR/VR Systems, AI Systems, and Imaging Systems.
+<br>
+I am also an AI Maximalist interested in Autoresearch/AI4S, aiming to accelerate scientific discovery by orders of magnitude and unlock research that was previously impossible.
 </p>
 
-<p style="color: #888; margin-bottom: 1.5rem;">Click on each area below to expand details and related publications.</p>
-
-<div class="research-area rendering">
+<div class="research-area arvr">
 <details class="area-details">
-<summary><h3 style="display:inline; cursor:pointer;">Generative AI, AR/VR rendering and acceleration:</h3></summary>
+<summary><h3 style="display:inline; cursor:pointer;">AR/VR Systems</h3></summary>
 
 <p>
-Developing neural rendering algorithms for AR/VR systems and designing corresponding hardware accelerators. This includes real-time Gaussian splatting on mobile devices, foveated rendering pipelines, display-rendering power co-optimization, and streaming architectures for neural rendering.
+Building efficient AR/VR systems through joint optimization across rendering algorithms, displays, hardware, and perception. This includes power-aware tone mapping, real-time Gaussian splatting, foveated rendering, and streaming architectures for immersive content.
 </p>
 
 <div class="research-tags">
@@ -193,14 +193,13 @@ Developing neural rendering algorithms for AR/VR systems and designing correspon
   <span>XR Systems</span>
   <span>Hardware Accelerator</span>
   <span>Neural Rendering</span>
-  <span>World Model</span>
-  <span>Diffusion Model</span>
+  <span>Power-Aware Computing</span>
 </div>
 
 <details class="pub-details">
 <summary>Related Publications</summary>
 <div class="pub-list">
-  <span class="pub-entry"><strong>[ECCV 2026]</strong> <a href="https://arxiv.org/abs/2509.21541">ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
+  <span class="pub-entry"><strong>[TVCG 2026]</strong> LowPowAR: Power-Constrained Tone Mapping for Augmented Reality</span>
   <span class="pub-entry"><strong>[CVPR 2026]</strong> <span class="award">(Highlight)</span> <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_Seele_A_Unified_Acceleration_Framework_for_Real-Time_Gaussian_Splatting_on_CVPR_2026_paper.pdf">SeeLe: A Unified Acceleration Framework for Real-Time Gaussian Splatting on Mobile Devices</a></span>
   <span class="pub-entry"><strong>[SIGGRAPH Asia 2025]</strong> <a href="https://powergs.netlify.app/">PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in Power-Constrained XR Systems</a></span>
   <span class="pub-entry"><strong>[ASPLOS 2025]</strong> <span class="award">(Best Paper Award)</span> <a href="https://horizon-lab.org/metasapiens/">MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and Accelerated Foveated Rendering</a></span>
@@ -214,12 +213,46 @@ Developing neural rendering algorithms for AR/VR systems and designing correspon
 </details>
 </div>
 
-<div class="research-area imaging">
+<div class="research-area ai-systems">
 <details class="area-details">
-<summary><h3 style="display:inline; cursor:pointer;">Imaging System Design</h3></summary>
+<summary><h3 style="display:inline; cursor:pointer;">AI Systems</h3></summary>
 
 <p>
-Designing sensors and optics for imaging systems, along with co-optimized downstream vision models. This involves in-sensor compression inspired by efficient coding theory, and privacy-preserving optical feature separation.
+Developing artificial intelligence across generative and multimodal learning, embodied perception, and robot learning. This work spans controllable visual generation, cross-modal alignment, open-world perception, and autonomous systems.
+</p>
+
+<div class="research-tags">
+  <span>Generative Models</span>
+  <span>Video Diffusion</span>
+  <span>Multimodal Learning</span>
+  <span>Cross-Modal Alignment</span>
+  <span>Embodied AI</span>
+  <span>3D Object Detection</span>
+  <span>Robot Learning</span>
+  <span>Autonomous Driving</span>
+</div>
+
+<details class="pub-details">
+<summary>Related Publications</summary>
+<div class="pub-list">
+  <span class="pub-entry"><strong>[ECCV 2026]</strong> <a href="https://arxiv.org/abs/2509.21541">ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering</a></span>
+  <span class="pub-entry"><strong>[ACM MM 2026]</strong> UniMod: Enhancing Multi-Modal Medical Diagnosis through Cross-Modality and Within-Modality Alignment</span>
+  <span class="pub-entry"><strong>[IROS 2024]</strong> <a href="/assets/pdf/iros24.pdf">OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving</a></span>
+  <span class="pub-entry"><strong>[ROMAN 2023]</strong> Learning Clear Class Separation for Open-set 3D Detector in Autonomous Vehicle via Selective Forgetting</span>
+  <span class="pub-entry"><strong>[PKU ASN 2023]</strong> A Review of Robot Learning</span>
+  <span class="pub-entry"><strong>[ICDL 2021]</strong> Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged</span>
+  <span class="pub-entry"><strong>[ICDL 2021]</strong> Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration</span>
+</div>
+</details>
+</details>
+</div>
+
+<div class="research-area imaging">
+<details class="area-details">
+<summary><h3 style="display:inline; cursor:pointer;">Imaging Systems</h3></summary>
+
+<p>
+Designing sensors and optics for imaging systems, along with co-optimized downstream vision models. This involves in-sensor compression inspired by efficient coding theory and privacy-preserving optical feature separation.
 </p>
 
 <div class="research-tags">
@@ -236,34 +269,6 @@ Designing sensors and optics for imaging systems, along with co-optimized downst
   <span class="pub-entry"><strong>[DAC 2026]</strong> <a href="https://63dac.conference-program.com/presentation/?id=SSSN118&sess=sess254">Invited Paper: A Quantitative Approach to Exploring Novel Image Sensor Architecture Towards Autonomous Edge Machine Vision</a></span>
   <span class="pub-entry"><strong>[DAC 2025]</strong> <a href="https://arxiv.org/abs/2504.04535">SnapPix: Efficient-Coding-Inspired In-Sensor Compression for Edge Vision</a></span>
   <span class="pub-entry"><strong>[WACV 2025]</strong> <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Boloor_PrivateEye_In-Sensor_Privacy_Preservation_Through_Optical_Feature_Separation_WACV_2025_paper.pdf">PrivateEye: In-Sensor Privacy Preservation Through Optical Feature Separation</a></span>
-</div>
-</details>
-</details>
-</div>
-
-<div class="research-area robotics">
-<details class="area-details">
-<summary><h3 style="display:inline; cursor:pointer;">Robotics and Embodied Intelligence</h3></summary>
-
-<p>
-Exploring robot perception and learning for autonomous systems, including open-world 3D object detection, sensorimotor coordination, and navigation skill acquisition from demonstrations.
-</p>
-
-<div class="research-tags">
-  <span>Embodied AI</span>
-  <span>3D Object Detection</span>
-  <span>Robot Learning</span>
-  <span>Autonomous Driving</span>
-</div>
-
-<details class="pub-details">
-<summary>Related Publications</summary>
-<div class="pub-list">
-  <span class="pub-entry"><strong>[IROS 2024]</strong> <a href="/assets/pdf/iros24.pdf">OW3Det: Toward Open-World 3D Object Detection for Autonomous Driving</a></span>
-  <span class="pub-entry"><strong>[ROMAN 2023]</strong> Learning Clear Class Separation for Open-set 3D Detector in Autonomous Vehicle via Selective Forgetting</span>
-  <span class="pub-entry"><strong>[PKU ASN 2023]</strong> A Review of Robot Learning</span>
-  <span class="pub-entry"><strong>[ICDL 2021]</strong> Approaching Sound Object with Sensorimotor Coordination when Sensors Partially Damaged</span>
-  <span class="pub-entry"><strong>[ICDL 2021]</strong> Acquiring Robot Navigation Skill with Knowledge Learned from Demonstration</span>
 </div>
 </details>
 </details>
