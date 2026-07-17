@@ -176,7 +176,12 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% assign show_in = entry.show_in | default: '' | downcase %}
+      {% if show_in == 'true' %}
+        {% capture entrytype %}<em>In {{ entry.journal }}</em>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% endif %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
