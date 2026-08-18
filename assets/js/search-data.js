@@ -124,6 +124,9 @@ ninja.data = [{
           section: "News",},{id: "news-lowpowar-is-accepted-to-tvcg-2026-ismar-journal-track",
           title: 'LowPowAR is accepted to TVCG 2026 (ISMAR Journal Track).',
           description: "",
+          section: "News",},{id: "news-controlgs-is-accepted-to-siggraph-asia-2026",
+          title: 'ControlGS is accepted to SIGGRAPH Asia 2026.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
