@@ -159,3 +159,78 @@ html[data-theme="dark"] .news-highlight .table th::before {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+
+.honor-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.honor-card {
+  display: grid;
+  grid-template-columns: minmax(250px, 42%) 1fr;
+  gap: 1.4rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background: var(--global-card-bg-color);
+}
+
+.honor-certificate-wrap figure {
+  margin: 0;
+}
+
+.honor-certificate {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  border: 1px solid var(--global-divider-color);
+  background: #fff;
+}
+
+.honor-zoom-hint {
+  margin: 0.35rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.honor-copy h3 {
+  margin: 0.15rem 0 0.4rem;
+  color: var(--global-theme-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.honor-date {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.honor-organization {
+  margin: 0;
+  font-weight: 600;
+}
+
+.honor-paper {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.honor-location {
+  margin: 0.15rem 0 0;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 575.98px) {
+  .honor-card {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+}
