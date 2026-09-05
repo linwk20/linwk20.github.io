@@ -1,4 +1,4 @@
-// Scroll-linked silver stars at night and softly reflected light by day.
+// Scroll-linked silver stars at night and softly reflected warm light by day.
 (() => {
   "use strict";
 
@@ -43,8 +43,8 @@
     texture.width = texture.height = 192;
     const brush = texture.getContext("2d");
     const light = brush.createRadialGradient(96, 96, 0, 96, 96, 96);
-    const color = bright ? "255,255,255" : "111,108,104";
-    const strength = bright ? 0.8 : 0.12;
+    const color = bright ? "255,255,255" : "153,123,89";
+    const strength = bright ? 0.8 : 0.09;
     light.addColorStop(0, `rgba(${color},${strength})`);
     light.addColorStop(0.35, `rgba(${color},${strength * 0.6})`);
     light.addColorStop(0.72, `rgba(${color},${strength * 0.14})`);

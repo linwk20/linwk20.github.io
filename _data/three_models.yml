@@ -1,0 +1,7 @@
+# Public asset paths only. Never store API credentials or signed download URLs.
+portrait:
+  model: /assets/models/weikai-tripo-v1.glb
+  credit: Tripo AI
+ar_eyewear:
+  model: /assets/models/ar-eyewear-tripo-v1.glb
+  credit: Tripo AI · concept model

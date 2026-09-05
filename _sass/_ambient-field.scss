@@ -1,9 +1,9 @@
-// Neutral atmosphere keeps the colored links and publication labels distinct.
+// A near-white cream atmosphere keeps colored links distinct without an orange cast.
 :root {
-  --global-bg-color: #f0eeea;
+  --global-bg-color: #f7f3ed;
   --global-card-bg-color: rgba(255, 255, 255, 0.9);
-  --ambient-cloud: rgba(141, 137, 132, 0.1);
-  --ambient-cloud-soft: rgba(185, 182, 177, 0.12);
+  --ambient-cloud: rgba(193, 146, 86, 0.075);
+  --ambient-cloud-soft: rgba(219, 183, 131, 0.09);
 }
 
 html[data-theme="dark"] {

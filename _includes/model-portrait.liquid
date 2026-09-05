@@ -1,0 +1,9 @@
+{% if site.data.three_models.portrait.model %}
+<div class="mini-portrait" data-mini-portrait data-model="{{ site.data.three_models.portrait.model | relative_url | bust_file_cache }}" hidden>
+  <canvas tabindex="0" role="img" aria-label="3D portrait of Weikai. Drag or use arrow keys to rotate."></canvas>
+  <span class="mini-model-status" role="status">Loading 3D portrait…</span>
+  <span class="mini-model-credit">by Astra · {{ site.data.three_models.portrait.credit }}</span>
+  <button type="button" class="mini-reset" aria-label="Reset portrait view">↺</button>
+</div>
+<button type="button" class="portrait-mode-toggle" data-mini-portrait-toggle aria-pressed="false" hidden>Switch to 3D</button>
+{% endif %}

@@ -1,6 +1,8 @@
 ---
 ---
 {% assign selected_flag = entry.selected | default: '' | downcase %}
+{% assign has_playground = false %}
+{% if entry.key == 'lin2026controlgs' %}{% assign has_playground = true %}{% endif %}
 <div class="row publication-entry{% if selected_flag == 'true' %} publication-entry-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -271,6 +273,9 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
+      {% if has_playground %}
+        <button type="button" class="paper-play-trigger" data-paper-play="{{ entry.key }}" aria-controls="playground-{{ entry.key }}" aria-expanded="false" hidden>3D Playground <span aria-hidden="true">↗</span></button>
+      {% endif %}
     </div>
     {% if entry.award_image %}
       <div class="award-image">
@@ -407,4 +412,24 @@
       </div>
     {% endif %}
   </div>
+  {% if has_playground %}
+    <section class="paper-playground" id="playground-{{ entry.key }}" data-mini-playground data-paper="{{ entry.key }}" data-model="{% if site.data.three_models.ar_eyewear.model %}{{ site.data.three_models.ar_eyewear.model | relative_url | bust_file_cache }}{% endif %}" hidden aria-label="{{ entry.title | split: ':' | first }} 3D playground">
+      <div class="paper-play-toolbar">
+        <div class="paper-play-tabs" role="group" aria-label="Card view"><button type="button" data-paper-back>Paper</button><button type="button" class="is-active" aria-pressed="true">3D Playground</button></div>
+        <span class="paper-play-title">{{ entry.title | split: ':' | first }}</span>
+      </div>
+      <div class="paper-play-stage">
+        <canvas tabindex="0" role="img" aria-label="AR glasses. Drag or use arrow keys to rotate the model."></canvas>
+        <span class="mini-model-status" role="status">Loading 3D…</span>
+        <span class="mini-drag-hint">Drag to rotate</span>
+        <span class="mini-model-credit">{{ site.data.three_models.ar_eyewear.credit }}</span>
+      </div>
+      <div class="paper-play-controls">
+        <label class="mini-wireframe"><input type="checkbox" data-mini-wireframe> Wireframe</label>
+        <label class="mini-experiment">{% if entry.key == 'lin2026lowpowar' %}Display brightness{% else %}Post-process blur{% endif %}<input type="range" min="0" max="100" value="{% if entry.key == 'lin2026lowpowar' %}75{% else %}0{% endif %}" data-mini-effect aria-label="{% if entry.key == 'lin2026lowpowar' %}Display brightness{% else %}Post-process blur{% endif %}"></label>
+        <button type="button" class="mini-reset" aria-label="Reset 3D view and controls">Reset ↺</button>
+        <span class="mini-disclaimer">Illustration only</span>
+      </div>
+    </section>
+  {% endif %}
 </div>
