@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /honors/
-title: 🏆 Honors
+title: Honors
 description:
 nav: true
 nav_order: 2

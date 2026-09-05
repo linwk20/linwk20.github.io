@@ -1,0 +1,92 @@
+// Neutral atmosphere keeps the colored links and publication labels distinct.
+:root {
+  --global-bg-color: #f0eeea;
+  --global-card-bg-color: rgba(255, 255, 255, 0.9);
+  --ambient-cloud: rgba(141, 137, 132, 0.1);
+  --ambient-cloud-soft: rgba(185, 182, 177, 0.12);
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #101113;
+  --global-card-bg-color: rgba(26, 28, 31, 0.94);
+  --global-divider-color: #35383e;
+  --surface-subtle: #25282d;
+  --ambient-cloud: rgba(151, 154, 165, 0.13);
+  --ambient-cloud-soft: rgba(171, 174, 179, 0.06);
+}
+
+body { isolation: isolate; }
+
+.ambient-field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  contain: strict;
+  background:
+    radial-gradient(ellipse at 109% 45%, var(--ambient-cloud) 0, transparent 38%),
+    radial-gradient(ellipse at -9% 45%, var(--ambient-cloud-soft) 0, transparent 38%),
+    var(--global-bg-color);
+
+  canvas { display: block; width: 100%; height: 100%; }
+}
+
+// A separate canvas keeps the opaque navigation readable over scrolled content.
+#navbar-field-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.navbar.navbar-light > .container { position: relative; z-index: 1; }
+
+footer.sticky-bottom {
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 112%, var(--ambient-cloud-soft) 0, transparent 70%);
+  > .container { position: relative; z-index: 1; }
+}
+
+#footer-field-canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ambient-motion-toggle {
+  display: inline-block;
+  margin: 0 0 0 0.85rem;
+  padding: 0.35rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  background: transparent;
+  color: var(--global-text-color-light);
+  font: inherit;
+  font-size: 0.73rem;
+  cursor: pointer;
+
+  &:hover { color: var(--global-theme-color); }
+  &[hidden] { display: none; }
+}
+
+@media (max-width: 575.98px) {
+  .ambient-motion-toggle { display: block; margin: 0.5rem 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-motion-toggle { display: none; }
+}
+
+@media print {
+  .ambient-field, #navbar-field-canvas, #footer-field-canvas, .ambient-motion-toggle { display: none !important; }
+  body { background: #fff !important; }
+}

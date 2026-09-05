@@ -4,51 +4,40 @@
 <div class="row publication-entry{% if selected_flag == 'true' %} publication-entry-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
+      <div class="publication-media">
       {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div style="color:#ffffff">{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100 publication-venue-default">
-            <div style="color:#ffffff">{{- entry.abbr -}}</div>
-          </abbr>
-        {% endif %}
+        {% assign venue_abbr = entry.abbr | downcase %}
+        <div class="publication-venue-line{% if venue_abbr == 'arxiv' %} venue-preprint{% endif %}">
+          {% if site.data.venues[entry.abbr].url %}
+            <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+          {% else %}
+            <span>{{ entry.abbr }}</span>
+          {% endif %}
+        </div>
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          <img class="preview rounded" src="{{ entry.preview }}" alt="{{ entry.title | escape }}" loading="lazy">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
             include figure.liquid
-            loading="eager"
+            loading="lazy"
             path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
+            zoom_src=entry_path
+            sizes = "(max-width: 575px) 240px, 200px"
+            class="preview rounded"
             zoomable=true
             alt=entry.preview
           %}
         {% endif %}
       {% endif %}
+      </div>
     </div>
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
+  <div id="{{ entry.key }}" class="publication-copy {% if site.enable_publication_thumbnails %}col-sm-10{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">
       {%- if entry.html -%}
@@ -66,7 +55,7 @@
       {%- elsif entry.arxiv -%}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.title }}</a>
       {%- else -%}
-        <a href="#">{{ entry.title }}</a>
+        <span class="title-text">{{ entry.title }}</span>
       {%- endif -%}
     </div>
     {% if entry.award %}

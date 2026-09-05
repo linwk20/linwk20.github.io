@@ -1,8 +1,9 @@
 <header>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" aria-label="Main navigation">
+    <canvas id="navbar-field-canvas" aria-hidden="true"></canvas>
     <div class="container">
-      {% if page.permalink != '/' %}
+      {% unless site.enable_navbar_social and page.permalink == '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
@@ -20,10 +21,10 @@
             {{- site.title -}}
           {% endif %}
         </a>
-      {% elsif site.enable_navbar_social %}
+      {% else %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
+      {% endunless %}
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -121,7 +122,7 @@
             <!-- Search -->
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+                <span class="nav-link"><i class="ti ti-search" aria-hidden="true"></i><span class="sr-only">Search</span></span>
               </button>
             </li>
           {% endif %}

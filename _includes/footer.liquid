@@ -15,6 +15,7 @@
   </footer>
 {% else %}
   <footer class="sticky-bottom mt-5" role="contentinfo">
+    <canvas id="footer-field-canvas" aria-hidden="true"></canvas>
     {% if site.newsletter.enabled %}
       {% include newsletter.liquid %}
     {% endif %}

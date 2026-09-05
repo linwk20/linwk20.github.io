@@ -1,35 +1,34 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
+<div class="post about-page">
+  <article>
+  <div class="home-hero">
+  <header class="post-header hero-heading">
+    <p class="hero-eyebrow">Computer Science · University of Rochester</p>
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-        <span class="chinese-name">林惟凱</span>
+        <span class="english-name">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
+        <span class="chinese-name" lang="zh-Hant">林惟凱</span>
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    {% if page.subtitle != blank %}<p class="hero-tagline">{{ page.subtitle }}</p>{% endif %}
   </header>
 
-  <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="profile hero-portrait">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.24}}px, (min-width: 576px)
-      24vw, 95vw"{% endcapture %}
+          {% capture sizes %}(max-width: 767px) 144px, 184px{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Weikai Lin holding a circuit board"
             cache_bust=true
           %}
         {% endif %}
@@ -39,37 +38,30 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="hero-bio">{{ content }}</div>
+  </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2 style="font-weight: normal;">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">🔥 News</a>
-      </h2>
+      <section class="home-news" aria-labelledby="news-heading">
+      <div class="section-heading">
+        <h2 id="news-heading">Latest news</h2>
+        <a href="{{ '/news/' | relative_url }}" class="section-link">All news <span aria-hidden="true">↗</span></a>
+      </div>
       <div class="news-highlight">
       {% include news.liquid limit=true %}
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var el = document.querySelector('.news-highlight .table-responsive');
-          if (el) {
-            el.addEventListener('wheel', function(e) {
-              e.preventDefault();
-              el.scrollTop += e.deltaY * 0.3;
-            }, { passive: false });
-          }
-        });
-      </script>
-      <br>
+      </section>
     {% endif %}
 
 
     <!-- Publications -->
     {% if page.selected_papers %}
       <section id="publications" class="publication-section">
-        <h2 style="font-weight: normal;">
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">📝 Publications</a>
-        </h2>
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <a href="{{ '/publications/' | relative_url }}" class="section-link">Search publications <span aria-hidden="true">↗</span></a>
+        </div>
         <p class="publication-note">
           * Indicates equal contributions, some papers are <span class="inline-publication-highlight">highlighted</span>. See <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a> for full list.
         </p>

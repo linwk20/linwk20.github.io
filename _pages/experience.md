@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /experience/
-title: 💼 Experience
+title: Experience
 description:
 nav: true
 nav_order: 4
@@ -10,9 +10,10 @@ nav_order: 4
 <style>
 .exp-entry {
   display: flex;
-  gap: 1.2rem;
-  padding: 1.2rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.16);
 }
 
 .exp-entry:last-child {
@@ -20,17 +21,17 @@ nav_order: 4
 }
 
 html[data-theme="dark"] .exp-entry {
-  border-bottom-color: rgba(255,255,255,0.08);
+  border-bottom-color: rgba(148, 163, 184, 0.16);
 }
 
 .exp-logo {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  margin-top: 0.6rem;
-  border-radius: 12px;
+  width: 72px;
+  height: 72px;
+  margin-top: 0.15rem;
+  border: 1px solid rgba(100, 116, 139, 0.15);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,44 +42,93 @@ html[data-theme="dark"] .exp-entry {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 6px;
+  padding: 7px;
 }
 
 .exp-content {
   flex: 1;
+  min-width: 0;
 }
 
 .exp-header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.2rem;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .exp-company {
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 650;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
 }
 
 .exp-date {
-  font-size: 0.85rem;
-  color: #888;
-  white-space: nowrap;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
 }
 
 .exp-role {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--global-text-color-light);
-  margin-top: 0.15rem;
+  margin-top: 0.25rem;
+  line-height: 1.6;
 }
 
 .exp-detail {
   font-size: 0.9rem;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   line-height: 1.7;
+}
+
+.exp-section-title {
+  margin: 2.25rem 0 0.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.exp-section-title:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  .exp-entry {
+    gap: 0.9rem;
+    padding: 1.25rem 0;
+  }
+
+  .exp-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+  }
+
+  .exp-logo img {
+    padding: 5px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .exp-company {
+    font-size: 1rem;
+  }
+
+  .exp-detail {
+    font-size: 0.86rem;
+  }
 }
 </style>
 
-<h3 style="font-weight: normal; margin-top: 0;">🎓 Education</h3>
+<h3 class="exp-section-title">Education</h3>
 
 <div class="exp-entry">
   <div class="exp-logo">
@@ -131,7 +181,7 @@ html[data-theme="dark"] .exp-entry {
   </div>
 </div>
 
-<h3 style="font-weight: normal; margin-top: 1rem;">💼 Work Experience</h3>
+<h3 class="exp-section-title">Work Experience</h3>
 
 <div class="exp-entry">
   <div class="exp-logo">
