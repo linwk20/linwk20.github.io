@@ -134,6 +134,12 @@ ninja.data = [{
           section: "News",},{id: "news-controlgs-is-accepted-to-siggraph-asia-2026",
           title: 'ControlGS is accepted to SIGGRAPH Asia 2026.',
           description: "",
+          section: "News",},{id: "news-one-paper-accepted-to-emnlp-2026-main",
+          title: 'One paper accepted to EMNLP 2026 Main.',
+          description: "",
+          section: "News",},{id: "news-two-papers-accepted-to-nips-2026",
+          title: 'Two papers accepted to NIPS 2026.',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
