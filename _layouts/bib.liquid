@@ -100,10 +100,10 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <strong class="author-self">
             {{- author.first }}
             {{ author_last_html -}}
-          </em>
+          </strong>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
@@ -125,7 +125,20 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
+          {% assign hidden_author_is_self = false %}
+          {% assign hidden_author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
+          {% if site.scholar.last_name contains hidden_author_last_name %}
+            {% if site.scholar.first_name contains author.first %}
+              {% assign hidden_author_is_self = true %}
+            {% endif %}
+          {% endif %}
+          {% if hidden_author_is_self %}
+            {% assign more_authors_show = more_authors_show | append: '<strong class=author-self>' %}
+          {% endif %}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% if hidden_author_is_self %}
+            {% assign more_authors_show = more_authors_show | append: '</strong>' %}
+          {% endif %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}

@@ -340,7 +340,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
       font-size: 1rem;
       line-height: 1.55;
       margin-bottom: 0.35rem;
-      > em { font-weight: 700; border-bottom: 0; }
+      .author-self {
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.18em;
+      }
     }
 
     .periodical {
