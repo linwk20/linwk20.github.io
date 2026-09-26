@@ -137,8 +137,8 @@ ninja.data = [{
           section: "News",},{id: "news-one-paper-accepted-to-emnlp-2026-main",
           title: 'One paper accepted to EMNLP 2026 Main.',
           description: "",
-          section: "News",},{id: "news-two-papers-accepted-to-nips-2026",
-          title: 'Two papers accepted to NIPS 2026.',
+          section: "News",},{id: "news-two-papers-accepted-to-neurips-2026",
+          title: 'Two papers accepted to NeurIPS 2026.',
           description: "",
           section: "News",},{
       id: 'light-theme',
