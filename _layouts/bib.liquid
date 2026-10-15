@@ -2,7 +2,6 @@
 ---
 {% assign selected_flag = entry.selected | default: '' | downcase %}
 {% assign has_playground = false %}
-{% if entry.key == 'lin2026controlgs' %}{% assign has_playground = true %}{% endif %}
 <div class="row publication-entry{% if selected_flag == 'true' %} publication-entry-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -48,14 +47,14 @@
         {%- else -%}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}">{{ entry.title }}</a>
         {%- endif -%}
+      {%- elsif entry.arxiv -%}
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.title }}</a>
       {%- elsif entry.pdf -%}
         {%- if entry.pdf contains '://' -%}
           <a href="{{ entry.pdf }}">{{ entry.title }}</a>
         {%- else -%}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">{{ entry.title }}</a>
         {%- endif -%}
-      {%- elsif entry.arxiv -%}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.title }}</a>
       {%- else -%}
         <span class="title-text">{{ entry.title }}</span>
       {%- endif -%}
@@ -229,7 +228,7 @@
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
       {% endif %}
       {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
