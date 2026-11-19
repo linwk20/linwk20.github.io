@@ -88,7 +88,6 @@ export async function createMiniViewer(panel, portrait = false) {
   function reset(immediate=false){target={...initial};if(immediate)current={...initial};requestDraw();}
   function setWireframe(enabled){model.traverse(o=>{if(o.isMesh){const list=Array.isArray(o.material)?o.material:[o.material];list.forEach(m=>{m.wireframe=enabled;});}});requestDraw();}
   function setEffect(value){const lowPower=panel.dataset.paper==='lin2026lowpowar';overlayMaterials.forEach(m=>{m.uniforms.brightness.value=lowPower?value/100:.85;m.uniforms.softness.value=lowPower?.003:.003+value/100*.10;});requestDraw();}
-  function theme(){const dark=document.documentElement.getAttribute('data-theme')==='dark';ambient.intensity=dark?2:2.4;renderer.toneMappingExposure=dark?1.3:1.15;requestDraw();}
   canvas.addEventListener('pointerdown',e=>{if(!e.isPrimary||e.button!==0)return;drag={id:e.pointerId,x:e.clientX,y:e.clientY,yaw:target.yaw,pitch:target.pitch};canvas.setPointerCapture(e.pointerId);});
   canvas.addEventListener('pointermove',e=>{if(drag?.id!==e.pointerId)return;target.yaw=drag.yaw-(e.clientX-drag.x)*.009;target.pitch=THREE.MathUtils.clamp(drag.pitch+(e.clientY-drag.y)*.006,-.7,.7);requestDraw();});
   function release(e){if(drag?.id!==e.pointerId)return;drag=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);}
@@ -96,12 +95,11 @@ export async function createMiniViewer(panel, portrait = false) {
   canvas.addEventListener('keydown',e=>{const move={ArrowLeft:[-.12,0],ArrowRight:[.12,0],ArrowUp:[0,.1],ArrowDown:[0,-.1]}[e.key];if(move){e.preventDefault();target.yaw+=move[0];target.pitch=THREE.MathUtils.clamp(target.pitch+move[1],-.7,.7);requestDraw();}if(e.key==='Home'){e.preventDefault();reset();}});
   const resize=new ResizeObserver(requestDraw);resize.observe(canvas);
   const intersection=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible)requestDraw();else{cancelAnimationFrame(frame);frame=0;}});intersection.observe(panel);
-  const mutation=new MutationObserver(theme);mutation.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
   const visibility=()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;}else requestDraw();};document.addEventListener('visibilitychange',visibility);
   reduced.addEventListener('change',requestDraw);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();lost=true;setActive(false);status.textContent='3D paused by your browser. Select Paper to return.';status.hidden=false;});
-  function dispose(){setActive(false);resize.disconnect();intersection.disconnect();mutation.disconnect();document.removeEventListener('visibilitychange',visibility);reduced.removeEventListener('change',requestDraw);scene.traverse(o=>{o.geometry?.dispose();if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.dispose());});environment.dispose();renderer.dispose();}
+  function dispose(){setActive(false);resize.disconnect();intersection.disconnect();document.removeEventListener('visibilitychange',visibility);reduced.removeEventListener('change',requestDraw);scene.traverse(o=>{o.geometry?.dispose();if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.dispose());});environment.dispose();renderer.dispose();}
   window.addEventListener('pagehide',e=>{if(e.persisted){cancelAnimationFrame(frame);frame=0;}else dispose();});window.addEventListener('pageshow',requestDraw);
-  status.hidden=true;theme();requestDraw();
+  status.hidden=true;requestDraw();
   return {setActive,reset,setEffect,setWireframe,dispose};
 }

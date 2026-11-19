@@ -7,128 +7,8 @@ nav: true
 nav_order: 4
 ---
 
-<style>
-.exp-entry {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.4rem;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(100, 116, 139, 0.16);
-}
-
-.exp-entry:last-child {
-  border-bottom: none;
-}
-
-html[data-theme="dark"] .exp-entry {
-  border-bottom-color: rgba(148, 163, 184, 0.16);
-}
-
-.exp-logo {
-  flex-shrink: 0;
-  width: 72px;
-  height: 72px;
-  margin-top: 0.15rem;
-  border: 1px solid rgba(100, 116, 139, 0.15);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-}
-
-.exp-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 7px;
-}
-
-.exp-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.exp-header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem 1.2rem;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.exp-company {
-  font-weight: 650;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
-  line-height: 1.5;
-}
-
-.exp-date {
-  font-size: 0.8rem;
-  color: var(--global-text-color-light);
-  line-height: 1.6;
-  font-variant-numeric: tabular-nums;
-}
-
-.exp-role {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-  margin-top: 0.25rem;
-  line-height: 1.6;
-}
-
-.exp-detail {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  line-height: 1.7;
-}
-
-.exp-section-title {
-  margin: 2.25rem 0 0.25rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.exp-section-title:first-of-type {
-  margin-top: 0;
-}
-
-@media (max-width: 575.98px) {
-  .exp-entry {
-    gap: 0.9rem;
-    padding: 1.25rem 0;
-  }
-
-  .exp-logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 8px;
-  }
-
-  .exp-logo img {
-    padding: 5px;
-  }
-
-  .exp-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.2rem;
-  }
-
-  .exp-company {
-    font-size: 1rem;
-  }
-
-  .exp-detail {
-    font-size: 0.86rem;
-  }
-}
-</style>
-
-<h3 class="exp-section-title">Education</h3>
+<section class="exp-section" aria-labelledby="exp-education">
+<h2 class="exp-section-title" id="exp-education">Education</h2>
 
 <div class="exp-entry">
   <div class="exp-logo">
@@ -164,7 +44,7 @@ html[data-theme="dark"] .exp-entry {
   </div>
 </div>
 
-<div class="exp-entry" style="border-bottom: none;">
+<div class="exp-entry">
   <div class="exp-logo">
     <img src="{{ '/assets/img/work_logos/tsinghua.png' | relative_url }}" alt="Tsinghua University">
   </div>
@@ -180,8 +60,10 @@ html[data-theme="dark"] .exp-entry {
     </div>
   </div>
 </div>
+</section>
 
-<h3 class="exp-section-title">Work Experience</h3>
+<section class="exp-section" aria-labelledby="exp-work-experience">
+<h2 class="exp-section-title" id="exp-work-experience">Work Experience</h2>
 
 <div class="exp-entry">
   <div class="exp-logo">
@@ -246,3 +128,4 @@ html[data-theme="dark"] .exp-entry {
     </div>
   </div>
 </div>
+</section>

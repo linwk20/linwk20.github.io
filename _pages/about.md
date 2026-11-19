@@ -25,20 +25,17 @@ latest_posts:
 
 <div class="intro-text">
   <p>
-    I am a Computer Science Ph.D. student at <a href="https://www.rochester.edu/">University of Rochester</a>, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. in Electronic Engineering from <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> and M.Sc. in Intelligent Science from <a href="https://english.pku.edu.cn/">Peking University</a>.
+    I am a Computer Science Ph.D. candidate at <a class="org-link" href="https://www.rochester.edu/"><img class="org-logo" src="{{ '/assets/img/org_icons/rochester.png' | relative_url }}" alt="" width="55" height="72">&#8288;University of Rochester</a>, advised by <a href="https://yuhaozhu.com/">Yuhao Zhu</a>. Previously, I earned B.E. in Electronic Engineering from <a class="org-link" href="https://www.tsinghua.edu.cn/en/"><img class="org-logo" src="{{ '/assets/img/org_icons/tsinghua.png' | relative_url }}" alt="" width="72" height="72">&#8288;Tsinghua University</a>, where I worked on chip design and FPGA implementation, and M.Sc. in Intelligent Science from <a class="org-link" href="https://english.pku.edu.cn/"><img class="org-logo" src="{{ '/assets/img/org_icons/pku.png' | relative_url }}" alt="" width="72" height="72">&#8288;Peking University</a>, where I worked on embodied AI and robot learning with a focus on autonomous driving.
   </p>
   <p>
-    <span style="font-weight: 700;">Research.</span> I am interested in end-to-end hardware-software co-design. My publications span AR/VR, AI, and imaging systems. More details are available on my <a href="/research/">research page</a>.
+    I received the <a href="{{ '/honors/' | relative_url }}">ASPLOS 2025 Best Paper Award</a> and was named a <a href="{{ '/honors/' | relative_url }}">DAC Young Fellow</a> in 2026. I was a Research Scientist Intern at <a class="org-link" href="https://www.meta.com/"><img class="org-logo" src="{{ '/assets/img/org_icons/meta.png' | relative_url }}" alt="" width="99" height="72">&#8288;Meta</a>, working on Transformer-based neural rendering, and a Research Intern at <a class="org-link" href="https://pixocial.com/"><img class="org-logo" src="{{ '/assets/img/org_icons/pixocial.png' | relative_url }}" alt="" width="72" height="72">&#8288;Pixocial</a>, working on video diffusion.
+  </p>
+  <p>
+    <strong>Research.</strong> I am interested in end-to-end hardware-software co-design. My publications span AR/VR, AI, and imaging systems. More details are available on my <a href="/research/">research page</a>.
   </p>
   <p>
     I am also an AI maximalist interested in Autoresearch/AI4S, aiming to accelerate scientific discovery by orders of magnitude and unlock research that was previously impossible.
   </p>
 </div>
 
-<nav class="profile-links" aria-label="Contact and profiles">
-  <a href="{{ '/assets/pdf/Weikai_Academic_CV.pdf' | relative_url }}" class="profile-cv">View CV <span aria-hidden="true">↗</span></a>
-  <a href="mailto:wlin33@ur.rochester.edu">Email</a>
-  <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a>
-  <a href="https://www.linkedin.com/in/weikai-lin-10190a261">LinkedIn</a>
-  <a href="https://github.com/linwk20">GitHub</a>
-</nav>
+{% include profile_links.liquid %}

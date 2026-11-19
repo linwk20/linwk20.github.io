@@ -3,68 +3,65 @@ layout: default
 ---
 <div class="post about-page">
   <article>
-  <div class="home-hero">
-  <header class="post-header hero-heading">
-    <p class="hero-eyebrow">Computer Science · University of Rochester</p>
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="english-name">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
-        <span class="chinese-name" lang="zh-Hant">林惟凱</span>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    {% if page.subtitle != blank %}<p class="hero-tagline">{{ page.subtitle }}</p>{% endif %}
-  </header>
-
-    {% if page.profile %}
-      <div class="profile hero-portrait">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid rounded-circle' %}
+    <div class="home-hero">
+      <header class="post-header hero-heading">
+        <p class="hero-eyebrow">Computer Science · University of Rochester</p>
+        <h1 class="post-title">
+          {% if site.title == 'blank' %}
+            <span class="english-name">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
+            <span class="chinese-name" lang="zh-Hant">林惟凱</span>
           {% else %}
-            {% assign profile_image_class = 'img-fluid rounded' %}
+            {{ site.title }}
           {% endif %}
-          {% capture sizes %}(max-width: 767px) 144px, 184px{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Weikai Lin holding a circuit board"
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        {% include model-portrait.liquid %}
-      </div>
-    {% endif %}
+        </h1>
+        {% if page.subtitle != blank %}<p class="hero-tagline">{{ page.subtitle }}</p>{% endif %}
+      </header>
 
-    <div class="hero-bio">{{ content }}</div>
-  </div>
+      {% if page.profile %}
+        <div class="profile hero-portrait">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid' %}
+            {% endif %}
+            {% capture sizes %}(max-width: 575px) 168px, (max-width: 991px) 220px, 276px{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt="Weikai Lin holding a circuit board"
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+          {% include model-portrait.liquid %}
+        </div>
+      {% endif %}
+
+      <div class="hero-bio">{{ content }}</div>
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <section class="home-news" aria-labelledby="news-heading">
-      <div class="section-heading">
-        <h2 id="news-heading">Latest news</h2>
-        <a href="{{ '/news/' | relative_url }}" class="section-link">All news <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="news-highlight">
-      {% include news.liquid limit=true %}
-      </div>
+      <section class="home-section home-news" aria-labelledby="news-heading">
+        <div class="section-heading">
+          <h2 id="news-heading">Latest news</h2>
+          <a href="{{ '/news/' | relative_url }}" class="section-link">All news <span aria-hidden="true">↗</span></a>
+        </div>
+        {% include news.liquid limit=true %}
       </section>
     {% endif %}
 
-
     <!-- Publications -->
     {% if page.selected_papers %}
-      <section id="publications" class="publication-section">
+      <section id="publications" class="home-section publication-section" aria-labelledby="publications-heading">
         <div class="section-heading">
-          <h2>Publications</h2>
-          <a href="{{ '/publications/' | relative_url }}" class="section-link">Search publications <span aria-hidden="true">↗</span></a>
+          <h2 id="publications-heading">Recent first/co-first authored publications</h2>
+          <a href="{{ '/publications/' | relative_url }}" class="section-link">All publications <span aria-hidden="true">↗</span></a>
         </div>
         <p class="publication-note">
-          * Indicates equal contributions, some papers are <span class="inline-publication-highlight">highlighted</span>. See <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a> for full list.
+          * Indicates equal contributions. See <a href="{{ '/publications/' | relative_url }}">all publications</a> or <a href="https://scholar.google.com/citations?user=u52oisMAAAAJ">Google Scholar</a> for full list.
         </p>
         {% include selected_papers.liquid %}
       </section>
@@ -82,6 +79,5 @@ layout: default
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
-
-</article>
+  </article>
 </div>

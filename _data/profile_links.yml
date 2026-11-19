@@ -1,0 +1,28 @@
+# Contact and profile links. One list feeds both the buttons under the biography
+# on the home page and the links in the footer.
+#   label    text on the home page button
+#   short    shorter text for the footer (optional; defaults to label)
+#   url      site-relative path or full address
+#   icon     icon class shown before the label (optional)
+#   primary  true for the single filled button (optional)
+
+- label: View CV
+  short: CV
+  url: /assets/pdf/Weikai_Academic_CV.pdf
+  primary: true
+
+- label: Email
+  url: mailto:wlin33@ur.rochester.edu
+  icon: ti ti-mail
+
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=u52oisMAAAAJ
+  icon: ti ti-school
+
+- label: LinkedIn
+  url: https://www.linkedin.com/in/weikai-lin-10190a261
+  icon: ti ti-brand-linkedin
+
+- label: GitHub
+  url: https://github.com/linwk20
+  icon: ti ti-brand-github

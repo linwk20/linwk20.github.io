@@ -1,0 +1,2313 @@
+// =============================================================================
+// Site design layer
+//
+// One light theme on a white page: serif display type, a sans body, and small
+// monospace labels. Everything visual that is specific to this site lives here;
+// _base.scss stays the untouched template base.
+//
+//   1. Tokens            6. Home hero        11. Experience
+//   2. Base              7. Sections, news   12. Blog and posts
+//   3. Page shell        8. Publications     13. Footer
+//   4. Navigation        9. Research         14. Small components
+//   5. Page headers     10. Honors           15. Motion and print
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 1. Tokens
+//
+// Note for future edits: the production build minifies this stylesheet with a
+// tool that corrupts calc() expressions containing var(--name), and Sass turns
+// rgba(255, 255, 255, a) into a form the same tool breaks. So derived lengths
+// get their own token (see --nav-offset, --bleed-pull) instead of calc(), and
+// translucent white comes from --paper-veil.
+// -----------------------------------------------------------------------------
+:root {
+  --paper: #ffffff;
+  --surface: #f5f6f8;
+  --surface-strong: #eceef2;
+
+  --ink: #10151c;
+  --ink-2: #39424e;
+  --ink-3: #68727f;
+  --ink-4: #98a1ad;
+
+  --line: #e8eaef;
+  --line-strong: #d8dce3;
+
+  --accent: #1f4fd1;
+  --accent-strong: #163a9e;
+  --accent-soft: #edf2ff;
+
+  --highlight: #fffaea;
+  --highlight-line: #f1e4b0;
+
+  --award: #8a5a00;
+  --award-bg: #fff3cf;
+
+  --venue-muted: #7b8593; // preprints and projects
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-kai: "KaiTi", "STKaiti", "楷体", "DFKai-SB", "BiauKai", serif;
+
+  // Translucent whites are kept as plain custom properties so they reach the
+  // browser exactly as written.
+  --paper-veil: rgba(255, 255, 255, 0.9);
+  --paper-veil-soft: rgba(255, 255, 255, 0.85);
+
+  --nav-height: 64px;
+  --nav-offset: 88px; // nav height plus breathing room, for anchor scrolling
+  --gutter: 24px;
+  --bleed: 1.1rem; // how far tinted rows reach past the text column
+  --bleed-pull: -1.1rem; // the same distance as a negative margin
+
+  // The template's own variables, mapped onto the tokens above.
+  --global-bg-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-code-bg-color: #f5f6f8;
+  --global-text-color: #10151c;
+  --global-text-color-light: #68727f;
+  --global-theme-color: #1f4fd1;
+  --global-hover-color: #163a9e;
+  --global-hover-text-color: #ffffff;
+  --global-divider-color: #e8eaef;
+  --global-highlight-color: #8a5a00;
+  --global-back-to-top-bg-color: rgba(16, 21, 28, 0.82);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color: #ffffff;
+  --global-newsletter-text-color: #10151c;
+}
+
+// -----------------------------------------------------------------------------
+// 2. Base
+// -----------------------------------------------------------------------------
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: var(--nav-offset);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--paper);
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0;
+  font-feature-settings: "cv11", "ss03";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// The template pins a colour on every text element; let colour inherit again so
+// a component only has to set it once.
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+div,
+li,
+span,
+strong {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ink);
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  scroll-margin-top: var(--nav-offset);
+}
+
+strong,
+b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+a,
+table.table a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: var(--accent-strong);
+    text-decoration: none;
+  }
+}
+
+// Links inside running text: ink with a hairline underline that turns blue.
+@mixin prose-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+
+  &:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+  }
+}
+
+// Small uppercase monospace label: dates, venues, eyebrows.
+@mixin label($size: 0.72rem) {
+  font-family: var(--font-mono);
+  font-size: $size;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-feature-settings: normal;
+}
+
+@mixin display($size) {
+  font-family: var(--font-serif);
+  font-size: $size;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+::selection {
+  background: #d7e3ff;
+  color: var(--ink);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+hr {
+  border-top: 1px solid var(--line);
+}
+
+img {
+  max-width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// 3. Page shell
+// -----------------------------------------------------------------------------
+body.fixed-top-nav {
+  padding-top: var(--nav-height);
+}
+
+.container {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+body > .container[role="main"] {
+  flex: 1;
+  width: 100%;
+  margin-top: 4rem !important;
+  margin-bottom: 5.5rem;
+}
+
+.post > .post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header > p:empty {
+  display: none;
+}
+
+// -----------------------------------------------------------------------------
+// 4. Navigation
+// -----------------------------------------------------------------------------
+.navbar.navbar-light {
+  min-height: var(--nav-height);
+  padding: 0;
+  opacity: 1;
+  box-shadow: none;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-veil);
+  -webkit-backdrop-filter: saturate(160%) blur(16px);
+  backdrop-filter: saturate(160%) blur(16px);
+
+  // Bootstrap drops the container gutter below the collapse breakpoint; keep it
+  // so the bar always lines up with the page content.
+  > .container {
+    min-height: var(--nav-height);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-serif);
+    font-size: 1.32rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    color: var(--ink);
+
+    &:hover {
+      color: var(--ink);
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 0.7rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 450;
+    line-height: 1.4;
+    color: var(--ink-3);
+
+    &:hover {
+      color: var(--ink);
+      background: var(--surface);
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    background: transparent;
+    font-weight: 600;
+    color: var(--ink);
+
+    &:hover {
+      color: var(--ink);
+    }
+
+    // A short rule sitting on the bar's bottom edge marks the current page:
+    // the 34px link is centred in the 64px bar, so the edge is 15px below it
+    // (plus the bar's 1px border).
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.7rem;
+      right: 0.7rem;
+      bottom: -16px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--ink);
+    }
+  }
+
+  .nav-search {
+    margin-left: 0.5rem;
+  }
+
+  .navbar-toggler {
+    place-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: -9px;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+
+    &:hover {
+      background: var(--surface);
+    }
+
+    .icon-bar {
+      width: 20px;
+      height: 1.5px;
+      margin: 2.5px 0;
+      background-color: var(--ink);
+    }
+  }
+}
+
+#search-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 34px;
+  padding: 0 0.6rem 0 0.65rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: var(--paper);
+  color: var(--ink-3);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    border-color: var(--ink-4);
+    color: var(--ink);
+  }
+
+  .ti {
+    font-size: 0.95rem;
+  }
+
+  .search-label {
+    display: none;
+  }
+
+  .search-kbd {
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    color: inherit;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+}
+
+// Collapsed menu on tablets and phones.
+@media (max-width: 991.98px) {
+  .navbar.navbar-light {
+    background: var(--paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+
+    .navbar-toggler {
+      display: grid;
+    }
+
+    .navbar-collapse {
+      max-height: calc(100dvh - 64px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      text-align: left !important;
+    }
+
+    .navbar-nav {
+      align-items: stretch;
+      gap: 0;
+      padding: 0.35rem 0 1.1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      height: auto;
+      padding: 0.7rem 0;
+      border-radius: 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    .navbar-nav .nav-item.active > .nav-link::after {
+      left: auto;
+      right: 0.15rem;
+      top: 50%;
+      bottom: auto;
+      width: 6px;
+      height: 6px;
+      margin-top: -3px;
+      border-radius: 50%;
+    }
+
+    .nav-search {
+      margin: 0.9rem 0 0;
+    }
+  }
+
+  #search-toggle {
+    width: 100%;
+    height: 44px;
+    padding: 0 0.9rem;
+    font-size: 0.95rem;
+
+    .search-label {
+      display: inline;
+    }
+
+    .search-kbd {
+      display: none;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 5. Page headers
+// -----------------------------------------------------------------------------
+.post-title {
+  margin: 0;
+  @include display(clamp(2.5rem, 5.4vw, 3.3rem));
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+}
+
+.post-description {
+  max-width: 44rem;
+  margin: 1rem 0 0;
+  font-size: 1.06rem;
+  color: var(--ink-3);
+}
+
+// -----------------------------------------------------------------------------
+// 6. Home hero
+// -----------------------------------------------------------------------------
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 304px;
+  grid-template-areas:
+    "heading portrait"
+    "bio portrait";
+  column-gap: clamp(2.5rem, 5.6vw, 4.75rem);
+  align-items: start;
+  padding: 1.25rem 0 4.75rem;
+
+  .hero-heading {
+    grid-area: heading;
+    margin: 0;
+  }
+
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.4rem;
+    @include label(0.72rem);
+    letter-spacing: 0.11em;
+    color: var(--ink-3);
+
+    &::before {
+      content: "";
+      flex: none;
+      width: 28px;
+      height: 1px;
+      background: var(--ink-4);
+    }
+  }
+
+  .post-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 1.35rem;
+    row-gap: 0.5rem;
+    font-size: clamp(3rem, 7.4vw, 4.6rem);
+    line-height: 1.02;
+  }
+
+  .english-name {
+    white-space: nowrap;
+  }
+
+  .chinese-name {
+    margin: 0;
+    font-family: var(--font-kai);
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    white-space: nowrap;
+    color: var(--ink-3);
+  }
+
+  .hero-tagline {
+    max-width: 33rem;
+    margin: 1.3rem 0 0;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: -0.005em;
+    color: var(--ink-2);
+  }
+
+  .hero-bio {
+    grid-area: bio;
+    min-width: 0;
+    margin-top: 2rem;
+  }
+
+  .intro-text {
+    max-width: 37.5rem;
+  }
+
+  .intro-text p {
+    margin: 0 0 0.95rem;
+    font-size: 1.02rem;
+    line-height: 1.72;
+    color: var(--ink-2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      @include prose-link;
+    }
+
+    // Small emblem in front of an institution's name.
+    .org-logo {
+      display: inline-block;
+      width: auto;
+      height: 1.22em;
+      margin-right: 0.32em;
+      vertical-align: -0.26em;
+    }
+  }
+
+  // The photo is a cut-out on white, so it sits straight on the page without a frame.
+  .profile.hero-portrait {
+    grid-area: portrait;
+    position: relative;
+    width: 100%;
+    margin: 0.35rem 0 0;
+    float: none;
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 0;
+      border-radius: 0 !important;
+      box-shadow: none;
+      // Lifts the photo's slightly off-white backdrop to the page's pure white.
+      filter: brightness(1.012);
+    }
+  }
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.9rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    height: 40px;
+    padding: 0 0.9rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 0.88rem;
+    font-weight: 550;
+    line-height: 1;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    i {
+      font-size: 1.02rem;
+      color: var(--ink-3);
+      transition: color 0.15s ease;
+    }
+
+    &:hover i {
+      color: var(--ink);
+    }
+  }
+
+  .profile-cv {
+    padding: 0 1.05rem;
+    border-color: var(--ink);
+    background: var(--ink);
+    color: #fff;
+
+    &:hover {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 7. Sections and news
+// -----------------------------------------------------------------------------
+.home-section {
+  margin: 0 0 4.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+  margin: 0 0 1.25rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--ink);
+
+  h2 {
+    margin: 0;
+    @include display(1.9rem);
+    line-height: 1.2;
+  }
+
+  .section-link {
+    font-size: 0.84rem;
+    font-weight: 550;
+    color: var(--ink-3);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+// Outbound arrows lean forward a touch on hover.
+.section-link span,
+.profile-cv span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.section-link:hover span,
+.profile-cv:hover span {
+  transform: translate(2px, -2px);
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    column-gap: 1rem;
+    align-items: baseline;
+    padding: 0.72rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.96rem;
+    line-height: 1.5;
+    color: var(--ink);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  time {
+    @include label(0.75rem);
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+
+  a {
+    @include prose-link;
+  }
+
+  // An award mentioned in a news line carries the same gold tag as on a paper.
+  .news-award {
+    padding: 0.08rem 0.5rem;
+    border-radius: 999px;
+    background: var(--award-bg);
+    color: var(--award);
+    font-weight: 650;
+    white-space: nowrap;
+  }
+}
+
+// The standalone news page and the blog archives use the same list under their title.
+.post > article > .news > .news-list,
+.archive-list {
+  border-top: 1px solid var(--ink);
+}
+
+.archive-list a {
+  text-decoration: none;
+}
+
+// Tag, category and year archives: a small quiet icon in front of the title.
+.post-title > i {
+  margin-right: 0.15em;
+  font-size: 0.5em;
+  color: var(--ink-4);
+  vertical-align: 0.22em;
+}
+
+// -----------------------------------------------------------------------------
+// 8. Publications
+// -----------------------------------------------------------------------------
+.publication-section {
+  scroll-margin-top: var(--nav-offset);
+}
+
+.publication-note {
+  margin: 0 0 1.5rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--ink-3);
+
+  a {
+    @include prose-link;
+    color: var(--ink-2);
+  }
+
+  .inline-publication-highlight {
+    padding: 0.1rem 0.42rem;
+    border-radius: 4px;
+    background: var(--highlight);
+    box-shadow: inset 0 0 0 1px var(--highlight-line);
+    color: var(--ink);
+  }
+}
+
+.publications {
+  margin-top: 0;
+
+  // Year marker: a small label with a rule running to the edge of the column.
+  h2.bibliography {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 0.9rem;
+    padding: 0;
+    border: 0;
+    @include label(0.8rem);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: var(--ink-3);
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    &:first-child {
+      margin-top: 0.25rem;
+    }
+  }
+
+  ol.bibliography {
+    margin: 0 var(--bleed-pull);
+    padding: 0;
+    list-style: none;
+  }
+
+  ol.bibliography > li {
+    margin: 0 0 0.3rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    transition: none;
+
+    .publication-entry {
+      position: relative;
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      column-gap: 1.65rem;
+      align-items: start;
+      margin: 0;
+      padding: var(--bleed);
+      border: 0;
+      border-radius: 14px;
+      background: transparent;
+    }
+
+    // A hairline between neighbouring rows, inset to the text column.
+    .publication-entry::before {
+      content: "";
+      position: absolute;
+      top: -0.15rem;
+      left: var(--bleed);
+      right: var(--bleed);
+      height: 1px;
+      background: var(--line);
+    }
+
+    // Left column: the venue sits as a bar on top of the figure, so the two
+    // columns of a row stay close in height. Papers without a figure keep the
+    // bar and leave the rest of the column empty.
+    .publication-media {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .publication-venue {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 28px;
+      margin: -1px -1px 0;
+      padding: 0.28rem 0.65rem;
+      background: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.045em;
+      text-align: center;
+      color: #fff;
+
+      a,
+      span {
+        color: inherit;
+      }
+
+      a:hover {
+        color: #fff;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+      }
+
+      &.venue-preprint {
+        background: var(--venue-muted);
+      }
+
+      &:only-child {
+        margin-bottom: -1px;
+      }
+    }
+
+    // Every figure sits in the same 16:10 window.
+    .publication-thumb {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 16 / 10;
+      padding: 5px;
+
+      figure,
+      picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .preview {
+        display: block;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+        object-fit: contain;
+        border: 0;
+        border-radius: 4px !important;
+        background: #fff;
+        box-shadow: none !important;
+      }
+    }
+
+    .publication-copy {
+      min-width: 0;
+    }
+
+    .title {
+      margin: 0 0 0.42rem;
+      font-size: 1.07rem;
+      font-weight: 620;
+      line-height: 1.38;
+      letter-spacing: -0.012em;
+      color: var(--ink);
+
+      a,
+      .title-text {
+        color: inherit;
+      }
+
+      a:hover {
+        color: var(--accent);
+      }
+    }
+
+    .publication-award {
+      margin: 0 0 0.5rem;
+
+      .award {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        padding: 0.1rem 0.7rem;
+        border: 0;
+        border-radius: 999px;
+        background: var(--award-bg);
+        color: var(--award) !important;
+        font: inherit;
+        font-size: 0.8rem;
+        font-weight: 650;
+        line-height: 1.3;
+        cursor: pointer;
+        transition: box-shadow 0.15s ease;
+
+        &:hover {
+          box-shadow: inset 0 0 0 1px rgba(138, 90, 0, 0.35);
+        }
+      }
+    }
+
+    .author {
+      margin: 0 0 0.18rem;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--ink-3);
+
+      a {
+        border-bottom: 0;
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: var(--line-strong);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+
+        &:hover {
+          color: var(--accent);
+          text-decoration-color: currentColor;
+        }
+      }
+
+      // The site owner's name: always bold and underlined.
+      .author-self {
+        color: var(--ink);
+        font-weight: 700;
+        font-style: normal;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 0.2em;
+      }
+
+      sup {
+        color: inherit;
+      }
+
+      > span.more-authors {
+        border-bottom: 1px dashed var(--ink-4);
+        color: var(--ink-3);
+        cursor: pointer;
+
+        &:hover {
+          border-bottom-color: var(--ink);
+          color: var(--ink);
+        }
+      }
+    }
+
+    .periodical {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: var(--ink-3);
+
+      em {
+        font-style: normal;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+
+      &:not(:has(a, button:not([hidden]))) {
+        display: none;
+      }
+
+      a,
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        margin: 0;
+        padding: 0 0.72rem;
+        border: 0;
+        border-radius: 7px;
+        background: var(--surface);
+        box-shadow: none;
+        color: var(--ink-2);
+        font: inherit;
+        font-size: 0.78rem;
+        font-weight: 550;
+        line-height: 1;
+        letter-spacing: 0;
+        text-transform: none;
+        cursor: pointer;
+        transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+          background: var(--ink);
+          color: #fff;
+        }
+      }
+    }
+
+    .award-image {
+      max-width: 248px;
+      margin: 1rem 0 0.25rem;
+
+      figure {
+        margin: 0;
+      }
+
+      .award-certificate {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--line);
+        border-radius: 6px !important;
+        background: #fff;
+        box-shadow: 0 10px 24px -14px rgba(16, 21, 28, 0.3);
+      }
+    }
+
+    // Collapsible details (award note, abstract, BibTeX).
+    .hidden {
+      max-height: 0;
+      overflow: hidden;
+      border: 0 !important;
+      font-size: 0.86rem;
+      text-align: left;
+      transition: max-height 0.2s ease;
+
+      p {
+        margin: 0;
+        line-height: 1.55;
+      }
+    }
+
+    .hidden.open {
+      max-height: 100em;
+      margin-top: 0.75rem;
+      padding: 0.7rem 0.9rem;
+      border-radius: 8px;
+      background: var(--surface);
+    }
+  }
+}
+
+.publications ol.bibliography > li:first-child .publication-entry::before {
+  display: none;
+}
+
+// Highlighted papers. Only the full list tints them; the home page list is
+// marked "publications-plain" because every paper shown there is one of them.
+.publications:not(.publications-plain) ol.bibliography {
+  > li .publication-entry-highlight {
+    background: var(--highlight);
+
+    &::before {
+      top: 0;
+      background: var(--highlight-line);
+    }
+
+    .publication-media,
+    .award-image .award-certificate {
+      border-color: var(--highlight-line);
+    }
+
+    .links a,
+    .links button {
+      background: var(--paper-veil);
+      box-shadow: inset 0 0 0 1px var(--highlight-line);
+
+      &:hover {
+        background: var(--ink);
+        box-shadow: none;
+      }
+    }
+
+    .hidden.open {
+      background: var(--paper-veil-soft);
+      box-shadow: inset 0 0 0 1px var(--highlight-line);
+    }
+  }
+
+  // Runs of highlighted papers join into a single tinted band, and no rule is
+  // drawn where a plain row meets the edge of a band.
+  > li:has(> .publication-entry-highlight) + li:not(:has(> .publication-entry-highlight)) .publication-entry::before,
+  > li:not(:has(> .publication-entry-highlight)) + li .publication-entry-highlight::before {
+    display: none;
+  }
+
+  > li:has(> .publication-entry-highlight) + li:has(> .publication-entry-highlight) {
+    margin-top: -0.3rem;
+
+    .publication-entry {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  > li:has(> .publication-entry-highlight):has(+ li > .publication-entry-highlight) .publication-entry {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+// Filter field on the publications page.
+#bibsearch {
+  display: block;
+  width: 100%;
+  max-width: 26rem;
+  height: 46px;
+  margin: 0 0 2.25rem;
+  padding: 0 1rem 0 2.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  outline: none;
+  background: var(--paper)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2368727f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E")
+    no-repeat 0.95rem center;
+  box-shadow: none;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &::placeholder {
+    color: var(--ink-4);
+  }
+
+  &:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+}
+
+::highlight(search) {
+  background-color: #ffe58a;
+  color: var(--ink);
+}
+
+// -----------------------------------------------------------------------------
+// 9. Research
+// -----------------------------------------------------------------------------
+.research-intro {
+  max-width: 44rem;
+  margin: 0 0 3.25rem;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+
+  p {
+    margin: 0 0 0.8rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.research-area {
+  display: grid;
+  grid-template-columns: 15.5rem minmax(0, 1fr);
+  column-gap: 3rem;
+  padding: 1.6rem 0 2.75rem;
+  border-top: 1px solid var(--ink);
+
+  &:last-of-type {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.research-area-head {
+  h2 {
+    margin: 0.55rem 0 0;
+    @include display(1.85rem);
+    line-height: 1.15;
+  }
+}
+
+.research-area-index {
+  display: block;
+  @include label(0.76rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.research-area-body {
+  min-width: 0;
+  padding-top: 0.35rem;
+
+  > p {
+    margin: 0 0 1.1rem;
+    font-size: 1.02rem;
+    line-height: 1.72;
+    color: var(--ink-2);
+  }
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.24rem 0.7rem;
+    border-radius: 999px;
+    background: var(--surface);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+}
+
+details.pub-details {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+
+  summary {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 0;
+    list-style: none;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    user-select: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // Plus that turns into a minus when the list is open.
+    &::before {
+      content: "";
+      flex: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background:
+        linear-gradient(var(--ink), var(--ink)) center / 8px 1.5px no-repeat,
+        linear-gradient(var(--ink), var(--ink)) center / 1.5px 8px no-repeat,
+        var(--surface-strong);
+      transition: transform 0.2s ease, background-color 0.15s ease;
+    }
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &[open] > summary::before {
+    background:
+      linear-gradient(var(--ink), var(--ink)) center / 8px 1.5px no-repeat,
+      var(--surface-strong);
+    transform: rotate(180deg);
+  }
+}
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-entry {
+  display: grid;
+  grid-template-columns: 9.25rem minmax(0, 1fr);
+  column-gap: 1rem;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.pub-entry-venue {
+  @include label(0.7rem);
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+}
+
+.pub-entry-award {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--award-bg);
+  color: var(--award);
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: 0.08em;
+}
+
+// -----------------------------------------------------------------------------
+// 10. Honors
+// -----------------------------------------------------------------------------
+.honor-list {
+  display: block;
+  border-top: 1px solid var(--ink);
+}
+
+.honor-card {
+  display: grid;
+  grid-template-columns: minmax(0, 23.5rem) minmax(0, 1fr);
+  column-gap: clamp(2rem, 5vw, 3.75rem);
+  align-items: center;
+  padding: 2.75rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.honor-certificate-wrap figure {
+  margin: 0;
+}
+
+.honor-certificate {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px !important;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16, 21, 28, 0.05), 0 18px 36px -20px rgba(16, 21, 28, 0.28);
+  cursor: zoom-in;
+}
+
+.honor-zoom-hint {
+  margin: 0.8rem 0 0;
+  font-size: 0.76rem;
+  text-align: center;
+  color: var(--ink-4);
+}
+
+.honor-date {
+  margin: 0 0 0.7rem;
+  @include label(0.74rem);
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.honor-copy h2 {
+  margin: 0 0 0.75rem;
+  @include display(2rem);
+  line-height: 1.14;
+}
+
+.honor-organization {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.honor-paper {
+  margin: 0.8rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--line-strong);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+
+  em {
+    font-style: normal;
+  }
+}
+
+.honor-location {
+  margin: 0.95rem 0 0;
+  font-size: 0.86rem;
+  color: var(--ink-3);
+}
+
+// -----------------------------------------------------------------------------
+// 11. Experience
+// -----------------------------------------------------------------------------
+.exp-section {
+  margin: 0 0 3.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.exp-section-title {
+  margin: 0;
+  padding: 1.15rem 0 0.4rem;
+  border-top: 1px solid var(--ink);
+  @include display(1.9rem);
+  line-height: 1.2;
+}
+
+.exp-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--line);
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.exp-logo {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 0.1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    object-fit: contain;
+  }
+}
+
+.exp-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.15rem 1.5rem;
+}
+
+.exp-company {
+  font-size: 1.1rem;
+  font-weight: 620;
+  line-height: 1.45;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.exp-date {
+  @include label(0.74rem);
+  letter-spacing: 0.05em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.exp-role {
+  margin-top: 0.15rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
+.exp-detail {
+  margin-top: 0.6rem;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+
+  a {
+    @include prose-link;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 12. Blog and posts
+// -----------------------------------------------------------------------------
+.blog-header-img {
+  aspect-ratio: 16 / 5;
+  margin: 0 0 1.5rem;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--surface);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // If the photo cannot load, hide the alt text so only the soft panel shows.
+    font-size: 0;
+    color: transparent;
+  }
+}
+
+.post-list {
+  margin: 0 0 2.5rem;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 2.1rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    list-style: none;
+    transition: none;
+
+    &:first-child {
+      padding-top: 0.5rem;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background: transparent;
+      box-shadow: none;
+      transform: none;
+      border-color: var(--line);
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 0.55rem;
+      @include label(0.74rem);
+      letter-spacing: 0.06em;
+      color: var(--ink-3);
+
+      i {
+        font-size: 0.8rem;
+        color: var(--ink-4);
+      }
+    }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 1rem 0 0;
+      padding: 0;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 0.2rem 0.65rem;
+        border-radius: 999px;
+        background: var(--surface);
+        font-size: 0.76rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--ink-2);
+
+        i {
+          font-size: 0.62rem;
+          color: var(--ink-4);
+        }
+
+        &:hover {
+          background: var(--ink);
+          color: #fff;
+
+          i {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.post-list-title {
+  margin: 0 0 0.6rem;
+  @include display(1.85rem);
+  line-height: 1.18;
+
+  a.post-title {
+    display: inline;
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.post-list-description {
+  max-width: 46rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.pagination {
+  gap: 0.35rem;
+
+  .page-item .page-link {
+    min-width: 40px;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px !important;
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--ink);
+  }
+
+  .page-item.active .page-link {
+    border-color: var(--ink);
+    background-color: var(--ink);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--ink);
+    }
+  }
+
+  .page-item.disabled .page-link {
+    color: var(--ink-4);
+  }
+}
+
+// Single post.
+.post {
+  .post-header .post-meta {
+    margin: 1.1rem 0 0;
+    @include label(0.76rem);
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+  }
+
+  .post-header .post-tags {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    font-size: 0.85rem;
+    color: var(--ink-3);
+
+    a {
+      color: var(--ink-3);
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  .post-content {
+    max-width: 44rem;
+    font-size: 1.06rem;
+    line-height: 1.75;
+
+    h2 {
+      margin: 2.8rem 0 0.9rem;
+      @include display(1.75rem);
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 2.1rem 0 0.7rem;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 1.15rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      @include prose-link;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .post-tldr {
+    margin: 0 0 2.25rem;
+    padding: 1.1rem 1.3rem;
+    border: 0;
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: none;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.65;
+    color: var(--ink-2);
+
+    strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      @include label(0.72rem);
+      font-weight: 500;
+      color: var(--accent);
+    }
+  }
+}
+
+blockquote {
+  margin: 1.75rem 0;
+  padding: 0.15rem 0 0.15rem 1.3rem;
+  border-left: 2px solid var(--ink);
+  background: transparent;
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  line-height: 1.5;
+  color: var(--ink);
+
+  p + p {
+    margin-top: 0.7rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--ink-3);
+  }
+
+  &.block-tip,
+  &.block-warning,
+  &.block-danger {
+    padding: 1.1rem 1.3rem;
+    border-left-width: 3px;
+    border-radius: 0 12px 12px 0;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+
+    p + p {
+      margin-top: 0.8rem;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+
+  &.block-tip {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+
+    em,
+    li,
+    p {
+      color: var(--ink-2);
+    }
+
+    strong {
+      color: var(--ink);
+    }
+  }
+}
+
+pre,
+code {
+  font-family: var(--font-mono);
+  font-feature-settings: normal;
+}
+
+code {
+  padding: 0.12em 0.36em;
+  border-radius: 5px;
+  background: var(--surface);
+  font-size: 0.88em;
+  color: var(--ink);
+}
+
+pre {
+  padding: 1rem 1.15rem;
+  border-radius: 12px;
+  background: var(--surface);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+// -----------------------------------------------------------------------------
+// 13. Footer
+// -----------------------------------------------------------------------------
+footer.sticky-bottom {
+  margin-top: 0 !important;
+  padding: 2.6rem 0 2.4rem;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+
+  .container {
+    display: block;
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.6rem 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-name {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.012em;
+    line-height: 1.2;
+    color: var(--ink);
+
+    &:hover {
+      color: var(--ink);
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.6rem;
+
+    a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink-2);
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  .footer-note a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 14. Small components
+// -----------------------------------------------------------------------------
+#back-to-top {
+  border-radius: 50%;
+  box-shadow: 0 8px 20px -8px rgba(16, 21, 28, 0.45);
+}
+
+ninja-keys {
+  --ninja-accent-color: var(--accent);
+  --ninja-font-family: var(--font-sans);
+  --ninja-modal-background: #ffffff;
+  --ninja-modal-shadow: 0 24px 60px -20px rgba(16, 21, 28, 0.35), 0 0 0 1px rgba(16, 21, 28, 0.08);
+  --ninja-text-color: var(--ink);
+  --ninja-secondary-text-color: var(--ink-3);
+  --ninja-selected-background: var(--surface);
+  --ninja-overflow-background: rgba(16, 21, 28, 0.28);
+}
+
+.medium-zoom-overlay {
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+table.table {
+  color: var(--ink-2);
+
+  th {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  td,
+  th {
+    border-color: var(--line);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 15. Responsive, motion, print
+// -----------------------------------------------------------------------------
+@media (max-width: 991.98px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr) 236px;
+    column-gap: 2.5rem;
+    padding-bottom: 4rem;
+
+    .hero-tagline {
+      font-size: 1.35rem;
+    }
+  }
+
+  .research-area {
+    grid-template-columns: 12.5rem minmax(0, 1fr);
+    column-gap: 2rem;
+  }
+
+  .publications ol.bibliography > li .publication-entry {
+    grid-template-columns: 184px minmax(0, 1fr);
+    column-gap: 1.35rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .research-area {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.9rem;
+    padding: 1.4rem 0 2.4rem;
+  }
+
+  .research-area-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+
+    h2 {
+      margin: 0;
+      font-size: 1.7rem;
+    }
+  }
+
+  .research-area-body {
+    padding-top: 0;
+  }
+
+  .honor-card {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.6rem;
+    padding: 2.25rem 0;
+  }
+
+  .honor-certificate-wrap {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --gutter: 20px;
+    --bleed: 0.8rem;
+    --bleed-pull: -0.8rem;
+    --nav-height: 60px;
+    --nav-offset: 84px;
+  }
+
+  body > .container[role="main"] {
+    margin-top: 2.5rem !important;
+    margin-bottom: 4rem;
+  }
+
+  .navbar.navbar-light .navbar-collapse {
+    max-height: calc(100dvh - 60px);
+  }
+
+  .post > .post-header {
+    margin-bottom: 2rem;
+  }
+
+  // Hero: name first, then the photo, then the biography.
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "heading"
+      "portrait"
+      "bio";
+    padding: 0.25rem 0 3.5rem;
+
+    .hero-eyebrow {
+      margin-bottom: 1.1rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.08em;
+
+      &::before {
+        width: 18px;
+      }
+    }
+
+    .post-title {
+      column-gap: 0.9rem;
+      font-size: clamp(2.7rem, 13.2vw, 3.3rem);
+    }
+
+    .chinese-name {
+      font-size: 0.48em;
+    }
+
+    .hero-tagline {
+      margin-top: 1.05rem;
+      font-size: 1.24rem;
+    }
+
+    .profile.hero-portrait {
+      width: 188px;
+      margin: 1.9rem 0 0;
+    }
+
+    .hero-bio {
+      margin-top: 1.9rem;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+
+  .profile-links {
+    gap: 0.5rem;
+    margin-top: 1.6rem;
+
+    a {
+      padding: 0 0.9rem;
+    }
+  }
+
+  .home-section {
+    margin-bottom: 3.5rem;
+  }
+
+  .section-heading h2,
+  .exp-section-title {
+    font-size: 1.65rem;
+  }
+
+  .news-list li {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.15rem;
+    padding: 0.8rem 0;
+  }
+
+  // Publications stack: figure on top, text below.
+  .publications ol.bibliography > li {
+    margin-bottom: 0.4rem;
+
+    .publication-entry {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: 0.95rem;
+    }
+
+    .publication-media {
+      width: 100%;
+      max-width: 17rem;
+    }
+
+    .title {
+      font-size: 1.04rem;
+    }
+
+    .links a,
+    .links button {
+      height: 34px;
+      padding: 0 0.85rem;
+      font-size: 0.82rem;
+    }
+  }
+
+  .research-intro {
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+  }
+
+  .pub-entry {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.15rem;
+    padding: 0.7rem 0;
+  }
+
+  .exp-entry {
+    gap: 1rem;
+    padding: 1.4rem 0;
+  }
+
+  .exp-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+
+    img {
+      padding: 5px;
+    }
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+
+  .exp-company {
+    font-size: 1.04rem;
+  }
+
+  .honor-copy h2 {
+    font-size: 1.75rem;
+  }
+
+  .blog-header-img {
+    aspect-ratio: 16 / 8;
+    border-radius: 12px;
+  }
+
+  .post-list-title {
+    font-size: 1.6rem;
+  }
+
+  .post .post-content {
+    font-size: 1.02rem;
+  }
+
+  blockquote {
+    font-size: 1.12rem;
+  }
+
+  footer.sticky-bottom {
+    padding: 2.1rem 0 2rem;
+
+    .footer-main {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+// Pages cross-fade into each other where the browser supports it, and the home
+// hero rises into place once on load. Both are skipped for reduced motion.
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  .home-hero .hero-heading > *,
+  .home-hero .profile.hero-portrait,
+  .home-hero .hero-bio > * {
+    animation: rise-in 0.62s cubic-bezier(0.2, 0.65, 0.3, 1) both;
+  }
+
+  .home-hero .hero-heading > .post-title {
+    animation-delay: 0.04s;
+  }
+
+  .home-hero .hero-heading > .hero-tagline {
+    animation-delay: 0.1s;
+  }
+
+  .home-hero .profile.hero-portrait {
+    animation-delay: 0.14s;
+  }
+
+  .home-hero .hero-bio > .intro-text {
+    animation-delay: 0.18s;
+  }
+
+  .home-hero .hero-bio > .profile-links {
+    animation-delay: 0.26s;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media print {
+  .navbar,
+  #back-to-top,
+  .profile-links,
+  .portrait-mode-toggle {
+    display: none !important;
+  }
+
+  body.fixed-top-nav {
+    padding-top: 0;
+  }
+
+}

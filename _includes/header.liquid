@@ -1,25 +1,14 @@
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" aria-label="Main navigation">
-    <canvas id="navbar-field-canvas" aria-hidden="true"></canvas>
     <div class="container">
       {% unless site.enable_navbar_social and page.permalink == '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+          {%- if site.title == 'blank' -%}
+            {{ site.first_name }} {% if site.middle_name %}{{ site.middle_name }} {% endif %}{{ site.last_name }}
+          {%- else -%}
+            {{ site.title }}
+          {%- endif -%}
         </a>
       {% else %}
         <!-- Social Icons -->
@@ -120,9 +109,11 @@
           {% endfor %}
           {% if site.search_enabled %}
             <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link"><i class="ti ti-search" aria-hidden="true"></i><span class="sr-only">Search</span></span>
+            <li class="nav-item nav-search">
+              <button id="search-toggle" type="button" title="Search" onclick="openSearchModal()">
+                <i class="ti ti-search" aria-hidden="true"></i>
+                <span class="search-label">Search</span>
+                <kbd class="search-kbd" aria-hidden="true">Ctrl K</kbd>
               </button>
             </li>
           {% endif %}

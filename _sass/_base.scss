@@ -2,9 +2,7 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// Typography
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// Typography (web fonts are declared in _fonts.scss)
 
 p,
 h1,
@@ -585,20 +583,6 @@ footer.sticky-bottom {
   }
 }
 
-.chinese-name {
-  font-family: "KaiTi", "STKaiti", "楷体", "DFKai-SB", "BiauKai", serif;
-  font-size: 1.05em;
-  margin-left: 0.3em;
-  color: #222;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  vertical-align: 0.1em;
-}
-
-html[data-theme="dark"] .chinese-name {
-  color: #ffffff;
-}
-
 .post-list {
   margin: 0;
   margin-bottom: 40px;
@@ -725,10 +709,6 @@ html[data-theme="dark"] .chinese-name {
     color: var(--global-text-color);
     padding: 0.05rem 0.25rem;
   }
-
-  html[data-theme="dark"] & .inline-publication-highlight {
-    background: rgba(74, 222, 128, 0.26);
-  }
 }
 
 .publications {
@@ -771,10 +751,6 @@ html[data-theme="dark"] .chinese-name {
         border-radius: 4px;
       }
 
-      html[data-theme="dark"] & .publication-entry-highlight {
-        background: rgba(74, 222, 128, 0.15);
-      }
-
       .preview {
         width: 100%;
         aspect-ratio: 16 / 9;
@@ -804,10 +780,6 @@ html[data-theme="dark"] .chinese-name {
           background-color: #1f72b6;
         }
 
-        html[data-theme="dark"] & .publication-venue-default {
-          background-color: #2698ba;
-        }
-
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
@@ -820,14 +792,6 @@ html[data-theme="dark"] .chinese-name {
         a {
           color: var(--global-theme-color);
           text-decoration: none;
-
-          &:hover {
-            color: var(--global-hover-color);
-          }
-        }
-
-        html[data-theme="dark"] & a {
-          color: #6ecff6;
 
           &:hover {
             color: var(--global-hover-color);

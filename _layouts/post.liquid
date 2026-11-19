@@ -63,8 +63,8 @@ layout: default
 
   <article class="post-content">
     {% if page.description %}
-      <div class="post-description" style="font-style: italic; background-color: var(--global-card-bg-color); border-left: 4px solid var(--global-theme-color); padding: 15px; margin-bottom: 25px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        <strong>TL;DR:</strong> {{ page.description }}
+      <div class="post-description post-tldr">
+        <strong>TL;DR</strong> {{ page.description }}
       </div>
     {% endif %}
 

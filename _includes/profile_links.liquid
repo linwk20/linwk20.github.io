@@ -1,0 +1,14 @@
+<nav class="profile-links" aria-label="Contact and profiles">
+  {% for link in site.data.profile_links %}
+    {% if link.url contains '://' or link.url contains 'mailto:' %}
+      {% assign link_url = link.url %}
+    {% else %}
+      {% assign link_url = link.url | relative_url %}
+    {% endif %}
+    <a href="{{ link_url }}"{% if link.primary %} class="profile-cv"{% endif %}>
+      {%- if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif -%}
+      {{ link.label }}
+      {%- if link.primary %} <span aria-hidden="true">↗</span>{% endif -%}
+    </a>
+  {% endfor %}
+</nav>
